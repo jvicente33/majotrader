@@ -39,7 +39,7 @@
         <nav id="nav-menu-container">
           <ul class="nav-menu">
             <li class="menu-active">
-              <a>Inicio</a>
+              <a @click="toGo('/')" style="cursor: pointer">Inicio</a>
             </li>
             <li>
               <a>Sobre mí</a>
@@ -54,7 +54,7 @@
               <a>Blog</a>
             </li>
             <li>
-              <a>Contacto</a>
+              <a @click="toGo('/contact')" style="cursor: pointer">Contacto</a>
             </li>
           </ul>
         </nav>
@@ -63,6 +63,21 @@
     </div>
   </header>
 </template>
+
+<script>
+export default {
+  data(){
+    return{}
+  },
+  methods: {
+    toGo(ruta){
+      console.log('hola')
+      this.$router.push({path: ruta})
+    }
+  }
+}
+</script>
+
 
 
 <style scoped>

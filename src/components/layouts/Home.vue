@@ -33,16 +33,16 @@
 </template>
 
 <script>
-import HeaderApp from "./Header.vue";
-import FooterApp from "./Footer.vue";
-import TipsApp from "./Tips.vue";
-import BannerOneApp from "./BannerOne.vue";
-import ServicesApp from "./Services.vue";
-import PostApp from "./Post.vue";
-import AboutApp from "./About.vue";
-import ProjectsCompletedApp from "./ProjectsCompleted.vue";
-import ProjectsFinishApp from "./ProjectsFinish.vue";
-import TestimoniesApp from "./Testimonies.vue";
+import HeaderApp from "../Header.vue";
+import FooterApp from "../Footer.vue";
+import TipsApp from "../Tips.vue";
+import BannerOneApp from "../BannerOne.vue";
+import ServicesApp from "../Services.vue";
+import PostApp from "../Post.vue";
+import AboutApp from "../About.vue";
+import ProjectsCompletedApp from "../ProjectsCompleted.vue";
+import ProjectsFinishApp from "../ProjectsFinish.vue";
+import TestimoniesApp from "../Testimonies.vue";
 
 export default {
   data() {
