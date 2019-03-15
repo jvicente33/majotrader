@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-12 pb-30 header-text">
-          <h1>Latest posts from our Blog</h1>
+          <h1>Ultimos articulos publicados</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
             <br>labore et dolore magna aliqua.
           </p>

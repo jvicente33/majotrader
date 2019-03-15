@@ -71,8 +71,9 @@ export default {
   },
   methods: {
     toGo(ruta){
-      console.log('hola')
+      this.$router.go(0)
       this.$router.push({path: ruta})
+      
     }
   }
 }

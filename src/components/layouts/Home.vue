@@ -11,16 +11,14 @@
 
     <!-- Start About -->
     <!--<about-app></about-app>-->
+    <!-- Start Projects Completed -->
+    <projects-completed-app></projects-completed-app>
 
     <!-- Start service Area -->
     <services-app></services-app>
 
-    <!-- Start Projects Completed -->
-    <projects-completed-app></projects-completed-app>
-
     <!-- Start Projects Finish -->
-    <projects-finish-app></projects-finish-app>
-
+    <!--<projects-finish-app></projects-finish-app>-->
     <!-- Start Testimonies -->
     <testimonies-app></testimonies-app>
 
@@ -29,6 +27,16 @@
 
     <!-- Footer-->
     <footer-app></footer-app>
+
+    <!-- Loader-->
+    <loading
+      :active.sync="isLoading"
+      :can-cancel="false"
+      :on-cancel="onCancel"
+      :is-full-page="fullPage"
+      :opacity="1"
+      loader="dots"
+    ></loading>
   </div>
 </template>
 
@@ -44,9 +52,17 @@ import ProjectsCompletedApp from "../ProjectsCompleted.vue";
 import ProjectsFinishApp from "../ProjectsFinish.vue";
 import TestimoniesApp from "../Testimonies.vue";
 
+// Import component
+import Loading from "vue-loading-overlay";
+// Import stylesheet
+import "vue-loading-overlay/dist/vue-loading.css";
+
 export default {
   data() {
-    return {};
+    return {
+      isLoading: false,
+      fullPage: true
+    };
   },
   components: {
     HeaderApp,
@@ -58,7 +74,25 @@ export default {
     AboutApp,
     ProjectsCompletedApp,
     ProjectsFinishApp,
-    TestimoniesApp
+    TestimoniesApp,
+    Loading
+  },
+  methods: {
+    doAjax() {
+      this.isLoading = true;
+      // simulate AJAX
+      setTimeout(() => {
+        this.isLoading = false;
+      }, 1000);
+    },
+    onCancel() {
+      console.log("User cancelled the loader.");
+    }
+  },
+  mounted: function() {
+    this.$nextTick(function() {
+      this.doAjax()
+    });
   }
 };
 </script>

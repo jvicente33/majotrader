@@ -9,9 +9,9 @@
               <div class="inner"></div>
             </div>
             <h5>
-              <span class="counter">2</span>K+
+              <span class="counter">23</span>
             </h5>
-            <p>Projects Completed</p>
+            <p>Servicios Completados</p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6">
@@ -22,7 +22,7 @@
             <h5>
               <span class="counter">5.5</span>K
             </h5>
-            <p>Total Employees</p>
+            <p>Total Invertido</p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6">
@@ -30,8 +30,8 @@
             <div class="circle">
               <div class="inner"></div>
             </div>
-            <h5 class="counter">959</h5>
-            <p>Happy Clients</p>
+            <h5 class="counter">16</h5>
+            <p>Clientes Felices</p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6">
@@ -39,8 +39,8 @@
             <div class="circle">
               <div class="inner"></div>
             </div>
-            <h5 class="counter">367</h5>
-            <p>Tickets Submited</p>
+            <h5 class="counter">2</h5>
+            <p>Servicios Cancelados</p>
           </div>
         </div>
       </div>

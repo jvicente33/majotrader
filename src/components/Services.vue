@@ -3,39 +3,31 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-12 pb-30 header-text text-center">
-          <h1 class="mb-10">Our Capturing Market Sectors</h1>
-          <p>Who are in extremely love with eco friendly system..</p>
+          <h1 class="mb-10">Servicios</h1>
+          <p>Te preparamos para invertir en el mejor mercado..</p>
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-6">
           <div class="single-service">
             <div class="thumb">
-              <img src="img/s1.jpg" alt>
+              <img src="img/trader1.jpg" alt height="300">
             </div>
-            <h4>Automotive Engineering</h4>
-            <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct women face higher conduct.</p>
+            <h4>Tutorias en Linea</h4>
+            <p>El servicio de tutorías es ideal para aquel comerciante que ya tenga conocimiento y quiera ampliar sobre un tema en específico.</p>
           </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-6">
           <div class="single-service">
             <div class="thumb">
-              <img src="img/s2.jpg" alt>
+              <img src="img/trader2.jpg" alt height="300">
             </div>
-            <h4>Construction & Engineering</h4>
-            <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct women face higher conduct.</p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="single-service">
-            <div class="thumb">
-              <img src="img/s3.jpg" alt>
-            </div>
-            <h4>Industrial Engineering</h4>
-            <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct women face higher conduct.</p>
+            <h4>Flujo de Opciones en Tiempo Real (Proximamente)</h4>
+            <p>Este es un servicio donde estaré proporcionando alertas institucionales y su flujo en tiempo real.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 </template>
+
