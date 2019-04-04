@@ -1,8 +1,8 @@
 <template>
   <div>
     <header-app></header-app>
-    <banner-app title="Contacto"></banner-app>
-    <contact-app></contact-app>
+    <banner-app title="Sobre mí"></banner-app>
+    <about-app></about-app>
     <footer-app></footer-app>
     <loading
       :active.sync="isLoading"
@@ -17,9 +17,9 @@
 
 <script>
 import BannerApp from "../BannerTwo";
-import ContactApp from "../ContactPage";
 import HeaderApp from "../Header.vue";
 import FooterApp from "../Footer.vue";
+import AboutApp from "../About.vue";
 
 // Import component
 import Loading from "vue-loading-overlay";
@@ -33,7 +33,7 @@ export default {
       fullPage: true
     };
   },
-  components: { BannerApp, ContactApp, HeaderApp, FooterApp, Loading },
+  components: { BannerApp, HeaderApp, AboutApp, FooterApp, Loading },
   methods: {
     doAjax() {
       this.isLoading = true;

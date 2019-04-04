@@ -42,7 +42,7 @@
               <a @click="toGo('/')" style="cursor: pointer">Inicio</a>
             </li>
             <li>
-              <a>Sobre mí</a>
+              <a @click="toGo('/about')" style="cursor: pointer">Sobre mí</a>
             </li>
             <li>
               <a>Educación</a>
@@ -71,8 +71,9 @@ export default {
   },
   methods: {
     toGo(ruta){
-      this.$router.go(0)
+      
       this.$router.push({path: ruta})
+      this.$router.go(0)
       
     }
   }

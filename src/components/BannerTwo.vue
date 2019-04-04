@@ -5,7 +5,7 @@
             <div class="row d-flex align-items-center justify-content-center">
                 <div class="about-content col-lg-12">
                     <h1 class="text-white">
-                        Contacto				
+                        {{title}}				
                     </h1>	
                     <!--<p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="contact.html"> Contact Us</a></p>-->
                 </div>	
@@ -13,3 +13,10 @@
         </div>
     </section>
 </template>
+
+<script>
+export default {
+    props: ['title']
+}
+</script>
+
