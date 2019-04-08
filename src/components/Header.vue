@@ -23,7 +23,6 @@
             </ul>
           </div>
           <div class="col-lg-6 col-sm-6 col-8 header-top-right no-padding">
-            <a href="tel:+880 012 3654 896">+880 012 3654 896</a>
             <a href="stocktradermj@gmail.com">stocktradermj@gmail.com</a>
           </div>
         </div>
@@ -33,7 +32,7 @@
       <div class="row align-items-center justify-content-between d-flex">
         <div id="logo">
           <a>
-            <img src="img/logo_full.png" id="logo">
+            <img src="img/logo2.png" id="logo">
           </a>
         </div>
         <nav id="nav-menu-container">
@@ -45,10 +44,10 @@
               <a @click="toGo('/about')" style="cursor: pointer">Sobre mí</a>
             </li>
             <li>
-              <a>Educación</a>
+              <a @click="toGo('/education')" style="cursor: pointer">Educación</a>
             </li>
             <li>
-              <a>Servicios</a>
+              <a @click="toGo('/services')" style="cursor: pointer">Servicios</a>
             </li>
             <li>
               <a>Blog</a>
@@ -84,6 +83,6 @@ export default {
 
 <style scoped>
 #logo{
-  width: 180px;
+  width: 70px;
 }
 </style>

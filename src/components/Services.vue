@@ -14,7 +14,7 @@
               <img src="img/trader1.jpg" alt height="300">
             </div>
             <h4>Tutorias en Linea</h4>
-            <p>El servicio de tutorías es ideal para aquel comerciante que ya tenga conocimiento y quiera ampliar sobre un tema en específico.</p>
+            <p align="justify">El servicio de tutorías es ideal para aquel comerciante que ya tenga conocimiento y quiera ampliar sobre un tema en específico.</p>
           </div>
         </div>
         <div class="col-lg-6">
@@ -23,7 +23,7 @@
               <img src="img/trader2.jpg" alt height="300">
             </div>
             <h4>Flujo de Opciones en Tiempo Real (Proximamente)</h4>
-            <p>Este es un servicio donde estaré proporcionando alertas institucionales y su flujo en tiempo real.</p>
+            <p align="justify">Este es un servicio donde estaré proporcionando alertas institucionales y su flujo en tiempo real.</p>
           </div>
         </div>
       </div>

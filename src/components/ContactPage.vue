@@ -5,20 +5,20 @@
                 <div class="col-lg-4 d-flex flex-column address-wrap">
                     <div class="single-contact-address d-flex flex-row">
                         <div class="icon">
-                            <span class="lnr lnr-home"></span>
+                            <span class="lnr lnr-heart"></span>
                         </div>
                         <div class="contact-details">
-                            <h5>Dhaka, Bangladesh</h5>
-                            <p>56/8, West Panthapath</p>
+                            <h5>Atención adecuada</h5>
+                            <p>Te ofrecemos el mejor servicio online.</p>
                         </div>
                     </div>
                     <div class="single-contact-address d-flex flex-row">
                         <div class="icon">
-                            <span class="lnr lnr-phone-handset"></span>
+                            <span class="lnr lnr-map-marker"></span>
                         </div>
                         <div class="contact-details">
-                            <h5>00 (880) 9865 562</h5>
-                            <p>Mon to Fri 9am to 6 pm</p>
+                            <h5>Accede desde cualquier parte</h5>
+                            <p>No importa donde estes, cuenta con nosotros.</p>
                         </div>
                     </div>
                     <div class="single-contact-address d-flex flex-row">
@@ -26,8 +26,8 @@
                             <span class="lnr lnr-envelope"></span>
                         </div>
                         <div class="contact-details">
-                            <h5>support@codethemes.com</h5>
-                            <p>Send us your query anytime!</p>
+                            <h5>stocktradermj@gmail.com</h5>
+                            <p>¡Envia tu mensaje a cualquier hora!</p>
                         </div>
                     </div>														
                 </div>
