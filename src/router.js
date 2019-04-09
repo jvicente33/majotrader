@@ -5,6 +5,7 @@ import Contact from './components/layouts/Contact.vue'
 import AboutMe from './components/layouts/AboutMe.vue'
 import Services from './components/layouts/ServicesAll.vue'
 import Education from './components/layouts/EducationAll.vue'
+import Blog from './components/layouts/BlogAll.vue'
 
 Vue.use(Router)
 
@@ -35,6 +36,11 @@ export default new Router({
       path: '/education',
       name: 'education',
       component: Education
+    },
+    {
+      path: '/blog',
+      name: 'blog',
+      component: Blog
     }
   ]
 })

@@ -11,7 +11,7 @@
         <div class="col-lg-6">
           <div class="single-service">
             <div class="thumb">
-              <img src="img/trader1.jpg" alt height="300">
+              <img src="img/trader1.jpeg" alt height="300">
             </div>
             <h4>Curso de Acciones</h4>
             <p align="justify">
@@ -22,7 +22,7 @@
         <div class="col-lg-6">
           <div class="single-service">
             <div class="thumb">
-              <img src="img/trader2.jpg" alt height="300">
+              <img src="img/trader3.jpg" alt height="300">
             </div>
             <h4>Curso de Opciones Financieras</h4>
             <p align="justify">
