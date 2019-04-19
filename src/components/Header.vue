@@ -32,7 +32,7 @@
       <div class="row align-items-center justify-content-between d-flex">
         <div id="logo">
           <a>
-            <img src="img/logo2.png" id="logo">
+            <img src="img/logo3.png" id="logo">
           </a>
         </div>
         <nav id="nav-menu-container">
