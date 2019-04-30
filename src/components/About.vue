@@ -29,15 +29,11 @@
         </div>
         <div class="col-lg-4 col-md-12 relative">
           <div class="single-widget protfolio-widget">
-            <img src="img/blog/user2.jpg" alt>
+            <img id="img-majo" src="img/majo.png" alt>
             <a>
               <h4>María Manrique</h4>
             </a>
-            <p>
-              MCSE boot camps have its supporters and
-              its detractors. Some people do not understand why you should have to spend money
-              on boot camp when you can get.
-            </p>
+            <p>Hola, mi nombre es Maria Jose. Estaré aquí para apoyarte en lo que necesites, si te gusta la adrenalina, este trabajo es para ti.</p>
             <ul>
               <li>
                 <a href="#">
@@ -68,8 +64,12 @@
   margin-right: 3em;
 }
 
-.logo{
+.logo {
   width: 60px;
+}
+
+#img-majo {
+  width: 120px;
 }
 </style>
 

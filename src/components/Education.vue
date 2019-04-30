@@ -11,22 +11,39 @@
         <div class="col-lg-6">
           <div class="single-service">
             <div class="thumb">
-              <img src="img/trader1.jpeg" alt height="300">
+              <img src="img/trader3.jpg" alt height="300">
             </div>
-            <h4>Curso de Acciones</h4>
+            <h4>Curso de Opciones Financieras</h4>
             <p align="justify">
-              Este curso de acciones, es muy completo. Perfecto para los que no tengan ningún conocimiento del Stock Market o aquellos que tengan un conocimiento básico.
+              Esta capacitación esta diseñada para brindarte las habilidades y confianza que necesitas para
+              convertirte en un comerciante de las Opciones Financieras. Esta capacitación es desde cero no
+              necesitas tener conocimiento previo sobre el mercado bursátil.
             </p>
           </div>
         </div>
         <div class="col-lg-6">
           <div class="single-service">
             <div class="thumb">
-              <img src="img/trader3.jpg" alt height="300">
+              <img src="img/trader1.jpeg" alt height="300">
             </div>
-            <h4>Curso de Opciones Financieras</h4>
+            <h4>Curso de Trading Institucional Opciones (Proximamente)</h4>
             <p align="justify">
-              El mercado de Opciones es perfecto para aquellos que quieran ampliar y profundizar un poco en el Mercado Bursátil es uno de mis activos favoritos y es con el cual trabajo.
+              En esta capacitación te enseñaremos a seguir la huella institucional. A detectar las mejores
+              entradas de las ballenas del mercado y su flujo en tiempo real.
+              (Para esta capacitación se necesita tener conocimiento previo de las Opciones Financieras)
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="single-service">
+            <div class="thumb">
+              <img src="img/trader5.jpg" alt height="300">
+            </div>
+            <h4>Curso de Ventas de Opciones (Proximamente)</h4>
+            <p align="justify">
+              Aprenderás como sacar una mayor rentabilidad de tu capita, gracias a las ventas de opciones, con
+              nuestro sistema totalmente detallado.
+              (Para esta capacitación se necesita tener conocimiento previo de las Opciones Financieras)
             </p>
           </div>
         </div>
@@ -37,8 +54,8 @@
 
 <script>
 export default {
-  props: ['showTitle', 'showSubtitle', 'title', 'subtitle', 'limit']
-}
+  props: ["showTitle", "showSubtitle", "title", "subtitle", "limit"]
+};
 </script>
 
 

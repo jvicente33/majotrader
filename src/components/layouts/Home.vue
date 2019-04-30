@@ -23,7 +23,7 @@
     <testimonies-app></testimonies-app>
 
     <!-- Start Post -->
-    <post-app></post-app>
+    <!--<post-app></post-app>-->
 
     <!-- Footer-->
     <footer-app></footer-app>

@@ -14,7 +14,10 @@
               <img src="img/trader1.jpg" alt height="300">
             </div>
             <h4>Tutorias en Linea</h4>
-            <p align="justify">El servicio de tutorías es ideal para aquel comerciante que ya tenga conocimiento y quiera ampliar sobre un tema en específico.</p>
+            <p align="justify">
+              Este servicio es ideal para aquel trader que ya tenga conocimiento. Evaluaremos tu operativa y
+              reforzaremos aquellas zonas donde sientas que tienes debilidad.
+            </p>
           </div>
         </div>
         <div class="col-lg-6">
@@ -23,7 +26,11 @@
               <img src="img/trader2.jpg" alt height="300">
             </div>
             <h4>Flujo de Opciones en Tiempo Real (Proximamente)</h4>
-            <p align="justify">Este es un servicio donde estaré proporcionando alertas institucionales y su flujo en tiempo real.</p>
+            <p align="justify">
+              En este servicio te proporcionaremos alertas institucionales y su flujo en tiempo real.
+              Además estaremos informándote y haciendo observaciones del mercado, análisis técnicos de
+              algunas compañías e ideas sobre potenciales entradas.
+            </p>
           </div>
         </div>
       </div>
