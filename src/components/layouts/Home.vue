@@ -15,7 +15,8 @@
     <projects-completed-app></projects-completed-app>
 
     <!-- Start service Area -->
-    <services-app></services-app>
+    <!-- <services-app></services-app> -->
+    <education-app :title="'Educación'" :showTitle="true" :showSubtitle="false" :limit="2"></education-app>
 
     <!-- Start Projects Finish -->
     <!--<projects-finish-app></projects-finish-app>-->
@@ -51,6 +52,7 @@ import AboutApp from "../About.vue";
 import ProjectsCompletedApp from "../ProjectsCompleted.vue";
 import ProjectsFinishApp from "../ProjectsFinish.vue";
 import TestimoniesApp from "../Testimonies.vue";
+import EducationApp from "../Education.vue";
 
 // Import component
 import Loading from "vue-loading-overlay";
@@ -75,7 +77,8 @@ export default {
     ProjectsCompletedApp,
     ProjectsFinishApp,
     TestimoniesApp,
-    Loading
+    Loading,
+    EducationApp
   },
   methods: {
     doAjax() {

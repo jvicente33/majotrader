@@ -34,7 +34,7 @@
             </p>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6" v-if="limit > 2">
           <div class="single-service">
             <div class="thumb">
               <img src="img/trader5.jpg" alt height="300">
