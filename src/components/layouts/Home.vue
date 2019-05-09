@@ -16,12 +16,12 @@
     <!-- Start Projects Completed -->
     <!-- <projects-completed-app></projects-completed-app> -->
 
-    <!-- Start Testimonies -->
-    <testimonies-app></testimonies-app>
-
     <!-- Start service Area -->
     <!-- <services-app></services-app> -->
     <education-app :title="'Educación'" :showTitle="true" :showSubtitle="false" :limit="2"></education-app>
+
+    <!-- Start Testimonies -->
+    <testimonies-app></testimonies-app>
 
     <!-- Start Projects Finish -->
     <!--<projects-finish-app></projects-finish-app>-->
