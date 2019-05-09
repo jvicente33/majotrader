@@ -38,22 +38,22 @@
         <nav id="nav-menu-container">
           <ul class="nav-menu">
             <li class="menu-active">
-              <a @click="toGo('/')" style="cursor: pointer">Inicio</a>
+              <a @click="toGo('/')" id="home" style="cursor: pointer">Inicio</a>
             </li>
             <li>
-              <a @click="toGo('/about')" style="cursor: pointer">Sobre mí</a>
+              <a @click="toGo('/about')" id="about" style="cursor: pointer">Sobre mí</a>
             </li>
             <li>
-              <a @click="toGo('/education')" style="cursor: pointer">Educación</a>
+              <a @click="toGo('/education')" id="education" style="cursor: pointer">Educación</a>
             </li>
             <li>
-              <a @click="toGo('/services')" style="cursor: pointer">Servicios</a>
+              <a @click="toGo('/services')" id="services" style="cursor: pointer">Servicios</a>
             </li>
             <li>
-              <a>Blog</a>
+              <a id="blog">Blog</a>
             </li>
             <li>
-              <a @click="toGo('/contact')" style="cursor: pointer">Contacto</a>
+              <a @click="toGo('/contact')" id="contact" style="cursor: pointer">Contacto</a>
             </li>
           </ul>
         </nav>
@@ -64,25 +64,44 @@
 </template>
 
 <script>
+import JQuery from "jquery";
+const $ = JQuery;
+
 export default {
-  data(){
-    return{}
+  data() {
+    return {};
+  },
+  created() {
+
+    $(document).on("click", "#home", {vue: this}, function(e) {
+      e.data.vue.toGo("/");
+    });
+    $(document).on("click", "#about", {vue: this}, function(e) {
+      e.data.vue.toGo("/about");
+    });
+    $(document).on("click", "#education", {vue: this}, function(e) {
+      e.data.vue.toGo("/education");
+    });
+    $(document).on("click", "#services", {vue: this}, function(e) {
+      e.data.vue.toGo("/services");
+    });
+    $(document).on("click", "#contact", {vue: this}, function(e) {
+      e.data.vue.toGo("/contact");
+    });
   },
   methods: {
-    toGo(ruta){
-      
-      this.$router.push({path: ruta})
-      this.$router.go(0)
-      
+    toGo(ruta) {
+      this.$router.push({ path: ruta });
+      this.$router.go(0);
     }
   }
-}
+};
 </script>
 
 
 
 <style scoped>
-#logo{
+#logo {
   width: 70px;
 }
 </style>
