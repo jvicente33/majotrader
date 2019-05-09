@@ -7,12 +7,17 @@
     <banner-one-app></banner-one-app>
 
     <!-- Tips -->
+    <!-- Start About -->
     <tips-app></tips-app>
 
     <!-- Start About -->
     <!--<about-app></about-app>-->
+
     <!-- Start Projects Completed -->
-    <projects-completed-app></projects-completed-app>
+    <!-- <projects-completed-app></projects-completed-app> -->
+
+    <!-- Start Testimonies -->
+    <testimonies-app></testimonies-app>
 
     <!-- Start service Area -->
     <!-- <services-app></services-app> -->
@@ -20,8 +25,6 @@
 
     <!-- Start Projects Finish -->
     <!--<projects-finish-app></projects-finish-app>-->
-    <!-- Start Testimonies -->
-    <testimonies-app></testimonies-app>
 
     <!-- Start Post -->
     <!--<post-app></post-app>-->
