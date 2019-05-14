@@ -2,7 +2,7 @@
   <div>
     <header-app></header-app>
     <banner-app title="Educación"></banner-app>
-    <education-app :showTitle="false" :showSubtitle="false"></education-app>
+    <education-app :showTitle="false" :showSubtitle="false" :limit="10"></education-app>
     <footer-app></footer-app>
     <loading
       :active.sync="isLoading"

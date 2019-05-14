@@ -10,7 +10,7 @@
         Los presentes términos y condiciones son aceptados por el cliente / miembro, al participar de
         cualquier servicio.
         <br>
-        <strong>TRADERS PLANET LLC</strong> es una empresa educativa que busca mediante la interacción con sus
+        <strong>TRADEzRS PLANET LLC</strong> es una empresa educativa que busca mediante la interacción con sus
         clientes / miembros, brindar entrenamiento basado en el uso de análisis técnico de gráficos.
         <br>
         <strong>TRADERS PLANET LLC</strong> no es una empresa de inversiones, no hace captación de dinero del público y
@@ -88,7 +88,7 @@
                   <span class="lnr lnr-chevron-right max"></span>
                 </div>
                 <div class="contact-details">
-                  <p class="view"><strong>Agregar tertimonio</strong></p>
+                  <p class="view"><strong>Agregar testimonio</strong></p>
                 </div>
               </div>
             </a>
@@ -164,7 +164,7 @@ export default {
 }
 
 .view {
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 1.2em;
 }
 .max{

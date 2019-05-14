@@ -11,7 +11,7 @@
         <div class="col-lg-6">
           <div class="single-service">
             <div class="thumb">
-              <img src="img/trader1.jpg" alt height="300">
+              <img src="img/service-tutorias-linea.jpg" alt height="300">
             </div>
             <h4>Tutorias en Linea</h4>
             <p align="justify">
@@ -23,7 +23,7 @@
         <div class="col-lg-6">
           <div class="single-service">
             <div class="thumb">
-              <img src="img/trader2.jpg" alt height="300">
+              <img src="img/service-flujo-tiempo-real.jpg" alt height="300">
             </div>
             <h4>Flujo de Opciones en Tiempo Real (Proximamente)</h4>
             <p align="justify">

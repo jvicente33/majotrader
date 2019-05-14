@@ -23,7 +23,7 @@
             </ul>
           </div>
           <div class="col-lg-6 col-sm-6 col-8 header-top-right no-padding">
-            <a href="stocktradermj@gmail.com">stocktradermj@gmail.com</a>
+            <a href="stocktradermj@gmail.com">info@tradersplanet.us</a>
           </div>
         </div>
       </div>
@@ -74,23 +74,29 @@ export default {
   created() {
 
     $(document).on("click", "#home", {vue: this}, function(e) {
+      window.scroll({top:0, left: 0})
       e.data.vue.toGo("/");
     });
     $(document).on("click", "#about", {vue: this}, function(e) {
+      window.scroll({top:0, left: 0})
       e.data.vue.toGo("/about");
     });
     $(document).on("click", "#education", {vue: this}, function(e) {
+      window.scroll({top:0, left: 0})
       e.data.vue.toGo("/education");
     });
     $(document).on("click", "#services", {vue: this}, function(e) {
+      window.scroll({top:0, left: 0})
       e.data.vue.toGo("/services");
     });
     $(document).on("click", "#contact", {vue: this}, function(e) {
+      window.scroll({top:0, left: 0})
       e.data.vue.toGo("/contact");
     });
   },
   methods: {
     toGo(ruta) {
+      window.scroll({top:0, left: 0})
       this.$router.push({ path: ruta });
       this.$router.go(0);
     }
