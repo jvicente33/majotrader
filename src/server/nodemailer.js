@@ -41,14 +41,15 @@ async function sendMail(subject, text, name, email) {
   );*/
 
     let transporter = nodemailer.createTransport({
-      host: 'smtp.gmail.com',
+      host: 'smtp-relay.gmail.com',
       port: 465,
       secure: true, 
       auth: {
-        type: 'OAuth2',
+        //type: 'OAuth2',
         user: 'admin@tradersplanet.us',
-        serviceClient: key.client_id,
-        privateKey: key.private_key
+        pass: 'administrador'
+        /*serviceClient: key.client_id,
+        privateKey: key.private_key*/
       }
       
       /*,
@@ -84,11 +85,11 @@ async function sendMail(subject, text, name, email) {
       }*/
     });
 
-    await transporter.verify()
+    //await transporter.verify()
 
     // send mail with defined transport object
-    let info = await transport.sendMail({
-      from: `"Administrador" <admin@tradersplanet.us>`,
+    let info = await transporter.sendMail({
+      from: `admin@tradersplanet.us>`,
       to: email, //"info@tradersplanet.us",
       subject,
       text
