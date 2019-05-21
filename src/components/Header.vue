@@ -28,11 +28,11 @@
         </div>
       </div>
     </div>
-    <div class="container main-menu">
+    <div class="container main-menu"> 
       <div class="row align-items-center justify-content-between d-flex">
         <div id="logo">
           <a>
-            <img src="img/logo3.png" id="logo">
+            <img src="img/logo.png" id="logo">
           </a>
         </div>
         <nav id="nav-menu-container">

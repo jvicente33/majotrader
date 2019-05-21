@@ -7,7 +7,7 @@
           <!--<h6 class="text-uppercase">Don’t look further, here is the key</h6>-->
           <h1>TRADERS PLANET</h1>
           <p class="textwhite">
-            "No importa para nada si tienes razón o no. Lo que sí importa es <br> cuánto gana cuando tienes razón y cuánto pierdes cuando estás equivocado".
+            "No importa para nada si tienes razón o no. Lo que sí importa es <br> cuánto ganas cuando tienes razón y cuánto pierdes cuando estás equivocado".
             <br><strong><small>George Soros</small></strong>
           </p>
           <!--<a href="#" class="primary-btn header-btn text-uppercase">Get Started</a>-->

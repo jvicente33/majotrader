@@ -13,7 +13,7 @@
             <div class="thumb">
               <img src="img/education-opciones-financieras.jpg" alt height="300">
             </div>
-            <h4>Curso de Opciones Financieras</h4>
+            <!-- <h4>Curso de Opciones Financieras</h4> -->
             <p align="justify">
               Esta capacitación esta diseñada para brindarte las habilidades y confianza que necesitas para
               convertirte en un comerciante de las Opciones Financieras. Esta capacitación es desde cero no
@@ -26,7 +26,7 @@
             <div class="thumb">
               <img src="img/education-trading-institucional.jpg" alt height="300">
             </div>
-            <h4>Curso de Trading Institucional Opciones (Proximamente)</h4>
+            <!-- <h4>Curso de Trading Institucional Opciones (Proximamente)</h4> -->
             <p align="justify">
               En esta capacitación te enseñaremos a seguir la huella institucional. A detectar las mejores
               entradas de las ballenas del mercado y su flujo en tiempo real.
@@ -39,9 +39,9 @@
             <div class="thumb">
               <img src="img/education-venta-opciones.jpg" alt height="300">
             </div>
-            <h4>Curso de Ventas de Opciones (Proximamente)</h4>
+            <!-- <h4>Curso de Ventas de Opciones (Proximamente)</h4> -->
             <p align="justify">
-              Aprenderás como sacar una mayor rentabilidad de tu capita, gracias a las ventas de opciones, con
+              Aprenderás como sacar una mayor rentabilidad de tu capital, gracias a las ventas de opciones, con
               nuestro sistema totalmente detallado.
               (Para esta capacitación se necesita tener conocimiento previo de las Opciones Financieras)
             </p>

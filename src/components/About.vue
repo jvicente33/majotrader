@@ -51,7 +51,7 @@
                 </a>
               </li>
             </ul>
-            <img class="logo" src="img/logo2.png" alt>
+            <!-- <img class="logo" src="img/logo2.png" alt> -->
           </div>
         </div>
       </div>

@@ -1,9 +1,9 @@
 'use strict';
 const nodemailer = require('nodemailer');
 const { google } = require('googleapis');
-const OAuth2 = google.auth.OAuth2;
+/*const OAuth2 = google.auth.OAuth2;
 const nodemailerSendgrid = require('nodemailer-sendgrid');
-const key = require('./key-tradersplanet.json')
+const key = require('./key-tradersplanet.json')*/
 
 /**
  * blog
@@ -14,8 +14,10 @@ const key = require('./key-tradersplanet.json')
  */
 
 /*
-idClient: 481274889427-852dmbk1rbr32rktim7kcv65r2nri00t.apps.googleusercontent.com
-keySecret: lmV9O0iBV0VsCE4v_BLUUJdo
+idClient: 626639286414-4f005ipl6luvq5ak3bvmpeks3j8n94do.apps.googleusercontent.com
+keySecret: AJucUDFZ3swcs8IjxdiWKRpZ
+refreshToken: 09I3ZkN2kRjezy8OhMRrwQwFF5nMuk7qTrAtHHtLtkA
+token: ya29.GlsQBycULfXWbcGSF5wPlUquhuuwu8KsVtRThPtMOdooXtr56VMnq9bfGZt4b3LDBsP4TlSiO2UY4Zi2Y_wQNQ8GSr1CKqT_JCRXrIHKmAGIPVSzCUhhPCwZqZzI
 */
 
 async function sendMail(subject, text, name, email) {
@@ -41,21 +43,23 @@ async function sendMail(subject, text, name, email) {
   );*/
 
     let transporter = nodemailer.createTransport({
-      host: 'smtp-relay.gmail.com',
-      port: 465,
-      secure: true, 
+      host: 'smtp.gmail.com',
+      //service: 'gmail',
+      port: 25,
+      secure: false, 
       auth: {
         //type: 'OAuth2',
-        user: 'admin@tradersplanet.us',
-        pass: 'administrador'
-        /*serviceClient: key.client_id,
-        privateKey: key.private_key*/
-      }
-      
-      /*,
+        user: 'jvectronic@gmail.com',
+        pass: '49166752'
+        /*clientId: '626639286414-4f005ipl6luvq5ak3bvmpeks3j8n94do.apps.googleusercontent.com',
+        clientSecret: 'AJucUDFZ3swcs8IjxdiWKRpZ',
+        refreshToken: '1/09I3ZkN2kRjezy8OhMRrwQwFF5nMuk7qTrAtHHtLtkA',
+        accessToken: 'ya29.GlsQBycULfXWbcGSF5wPlUquhuuwu8KsVtRThPtMOdooXtr56VMnq9bfGZt4b3LDBsP4TlSiO2UY4Zi2Y_wQNQ8GSr1CKqT_JCRXrIHKmAGIPVSzCUhhPCwZqZzI',
+        expires: 3600*/
+      },
       tls: {
         rejectUnauthorized: false
-      }*/
+      }
       /*host: 'smtp.sendgrid.net',
       port: 465,
       secure: true,
@@ -89,7 +93,7 @@ async function sendMail(subject, text, name, email) {
 
     // send mail with defined transport object
     let info = await transporter.sendMail({
-      from: `admin@tradersplanet.us>`,
+      from: '"Fred Foo 👻" <foo@example.com>',
       to: email, //"info@tradersplanet.us",
       subject,
       text

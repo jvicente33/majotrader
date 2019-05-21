@@ -2679,7 +2679,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .feedback-area {
-  background: url(../img/testimonio-client.jpg) center;
+  background: url(../img/testimonio1-light.jpg) center;
   background-size: cover;
 }
 
@@ -2834,11 +2834,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .footer-area {
   padding-top: 100px;
-  background-color: #d5f1de;
+  background-color: #04091e;
+  /* background-color: #d5f1de; */
 }
 
 .footer-area h6 {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   margin-bottom: 25px;
   font-size: 18px;
   font-weight: 600;
