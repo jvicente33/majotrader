@@ -1,14 +1,14 @@
-'use strict';
-const nodemailer = require('nodemailer');
-const { google } = require('googleapis');
-/*const OAuth2 = google.auth.OAuth2;
-const nodemailerSendgrid = require('nodemailer-sendgrid');
-const key = require('./key-tradersplanet.json')*/
+"use strict";
+const nodemailer = require("nodemailer");
+const { google } = require("googleapis");
+const OAuth2 = google.auth.OAuth2;
+const nodemailerSendgrid = require("nodemailer-sendgrid");
+const key = require("./key-tradersplanet.json");
 
 /**
  * blog
  * SG.-1KpRCh8QDGXShWanbncHQ.7sVsMRE46Xh-c6WbC-omCblV2SDRblchcPLHKHaswJg
- * 
+ *
  * tradersplanet-blog
  * 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
  */
@@ -42,15 +42,22 @@ async function sendMail(subject, text, name, email) {
       })
   );*/
 
+    const transport = nodemailer.createTransport(
+      nodemailerSendgrid({
+        apiKey:
+          "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"
+      })
+    );
+
     let transporter = nodemailer.createTransport({
-      host: 'smtp.gmail.com',
+      host: "smtp.gmail.com",
       //service: 'gmail',
       port: 25,
-      secure: false, 
+      secure: false,
       auth: {
         //type: 'OAuth2',
-        user: 'jvectronic@gmail.com',
-        pass: '49166752'
+        user: "jvectronic@gmail.com",
+        pass: "49166752"
         /*clientId: '626639286414-4f005ipl6luvq5ak3bvmpeks3j8n94do.apps.googleusercontent.com',
         clientSecret: 'AJucUDFZ3swcs8IjxdiWKRpZ',
         refreshToken: '1/09I3ZkN2kRjezy8OhMRrwQwFF5nMuk7qTrAtHHtLtkA',
@@ -92,18 +99,18 @@ async function sendMail(subject, text, name, email) {
     //await transporter.verify()
 
     // send mail with defined transport object
-    let info = await transporter.sendMail({
+    let info = await transport.sendMail({
       from: '"Fred Foo 👻" <foo@example.com>',
       to: email, //"info@tradersplanet.us",
       subject,
       text
     });
 
-    console.log('Message sent: %s', info.messageId);
-    console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+    console.log("Message sent: %s", info.messageId);
+    console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
   } catch (error) {
     console.log(error.toString());
   }
 }
 
-sendMail('Informacion', 'HOla como estas??', 'Jose', 'blackencio33@gmail.com');
+sendMail("Informacion", "HOla como estas??", "Jose", "blackencio33@gmail.com");
