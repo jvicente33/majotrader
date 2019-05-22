@@ -32,10 +32,11 @@ async function sendMail(subject, text, name, email) {
     ];
 
     let info = await transport.sendMail({
-      from: 'admin@tradersplanet.us',
+      from: '"Admin 👻" <admin@tradersplanet.com>',
       to: "info@tradersplanet.us",
       subject,
-      html: template
+      html: template,
+      attachments
     });
 
     console.log("Correo enviado con exito.");
