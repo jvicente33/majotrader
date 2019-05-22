@@ -31,7 +31,7 @@
     <div class="container main-menu"> 
       <div class="row align-items-center justify-content-between d-flex">
         <div id="logo">
-          <a>
+          <a href="https://tradersplanet.us/">
             <img src="img/logo.png" id="logo">
           </a>
         </div>

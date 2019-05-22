@@ -1,11 +1,17 @@
 const express = require('express');
-
+const cors = require('cors')
 const port = process.env.PORT || 8020;
-
 const app = express();
+const router = require('./src/server/index')
+
+app.use(cors())
+app.use(express.json())
 
 //Static
 app.use(express.static(__dirname + '/dist/'));
+
+//Router
+app.use('/', router)
 
 
 //Output
