@@ -4,14 +4,14 @@
     <banner-app title="Educación"></banner-app>
     <education-app :showTitle="false" :showSubtitle="false" :limit="10"></education-app>
     <footer-app></footer-app>
-    <loading
+    <!-- <loading
       :active.sync="isLoading"
       :can-cancel="false"
       :on-cancel="onCancel"
       :is-full-page="fullPage"
       :opacity="1"
       loader="dots"
-    ></loading>
+    ></loading>-->
   </div>
 </template>
 

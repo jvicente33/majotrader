@@ -36,17 +36,17 @@
             <p>Hola, mi nombre es Maria Jose. Estaré aquí para apoyarte en lo que necesites, si te gusta la adrenalina, este trabajo es para ti.</p>
             <ul>
               <li>
-                <a href="#">
+                <a href="https://www.facebook.com/majotraders" target="_blank">
                   <i class="fa fa-facebook"></i>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://www.facebook.com/majotraders" target="_blank">
                   <i class="fa fa-twitter"></i>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://www.instagram.com/majotrader/" target="_blank">
                   <i class="fa fa-instagram"></i>
                 </a>
               </li>

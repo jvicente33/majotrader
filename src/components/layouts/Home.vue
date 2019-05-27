@@ -33,14 +33,14 @@
     <footer-app></footer-app>
 
     <!-- Loader-->
-    <loading
+    <!-- <loading
       :active.sync="isLoading"
       :can-cancel="false"
       :on-cancel="onCancel"
       :is-full-page="fullPage"
       :opacity="1"
       loader="dots"
-    ></loading>
+    ></loading>-->
   </div>
 </template>
 
@@ -97,7 +97,7 @@ export default {
   },
   mounted: function() {
     this.$nextTick(function() {
-      this.doAjax()
+      this.doAjax();
     });
   }
 };

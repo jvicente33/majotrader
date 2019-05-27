@@ -5,7 +5,9 @@
       <div class="row justify-content-center">
         <div class="col-md-12 pb-30 header-text text-center">
           <h1 class="mb-10 text-white">Testimonios de clientes</h1>
-          <p class="text-white">Calidad de servicio no es lo que tú das. Es lo que el cliente recibe.</p>
+          <p
+            class="text-white"
+          >Calidad de servicio no es lo que tú das. Es lo que el cliente recibe.</p>
         </div>
       </div>
       <div class="row feedback-contents justify-content-center align-items-center">
@@ -22,13 +24,13 @@
             <div class="single-feedback-carusel">
               <div class="title d-flex flex-row">
                 <h4 class="text-white pb-10">Natalie Smart</h4>
-                <div class="star">
+                <!-- <div class="star">
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star"></span>
-                </div>
+                </div>-->
               </div>
               <p
                 class="text-white"
@@ -37,28 +39,28 @@
             <div class="single-feedback-carusel">
               <div class="title d-flex flex-row">
                 <h4 class="text-white pb-10">Yolseg Peña</h4>
-                <div class="star">
+                <!-- <div class="star">
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
-                </div>
+                </div>-->
               </div>
               <p
                 class="text-white"
-              >Hola, gracias por transmitir esas energías positivas cada mañana y que tanto me han ayudado a crecer en este mundo del trading. Eres lo máximo, y sobre todo tu humildad y sinceridad me han hecho creer en ti cada día más. Excelelente día profe!</p>
+              >Hola, gracias por transmitir esas energías positivas cada mañana y que tanto me han ayudado a crecer en este mundo del trading. Eres lo máximo, y sobre todo tu humildad y sinceridad me han hecho creer en ti cada día más.</p>
             </div>
             <div class="single-feedback-carusel">
               <div class="title d-flex flex-row">
                 <h4 class="text-white pb-10">Raquel Garabito</h4>
-                <div class="star">
+                <!-- <div class="star">
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star"></span>
                   <span class="fa fa-star"></span>
-                </div>
+                </div>-->
               </div>
               <p
                 class="text-white"

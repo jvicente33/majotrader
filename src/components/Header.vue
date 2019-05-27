@@ -28,7 +28,7 @@
         </div>
       </div>
     </div>
-    <div class="container main-menu"> 
+    <div class="container main-menu">
       <div class="row align-items-center justify-content-between d-flex">
         <div id="logo">
           <a href="https://tradersplanet.us/">
@@ -72,33 +72,31 @@ export default {
     return {};
   },
   created() {
-
-    $(document).on("click", "#home", {vue: this}, function(e) {
-      window.scroll({top:0, left: 0})
+    $(document).on("click", "#home", { vue: this }, function(e) {
+      window.scroll({ top: 0, left: 0 });
       e.data.vue.toGo("/");
     });
-    $(document).on("click", "#about", {vue: this}, function(e) {
-      window.scroll({top:0, left: 0})
+    $(document).on("click", "#about", { vue: this }, function(e) {
+      window.scroll({ top: 0, left: 0 });
       e.data.vue.toGo("/about");
     });
-    $(document).on("click", "#education", {vue: this}, function(e) {
-      window.scroll({top:0, left: 0})
+    $(document).on("click", "#education", { vue: this }, function(e) {
+      window.scroll({ top: 0, left: 0 });
       e.data.vue.toGo("/education");
     });
-    $(document).on("click", "#services", {vue: this}, function(e) {
-      window.scroll({top:0, left: 0})
+    $(document).on("click", "#services", { vue: this }, function(e) {
+      window.scroll({ top: 0, left: 0 });
       e.data.vue.toGo("/services");
     });
-    $(document).on("click", "#contact", {vue: this}, function(e) {
-      window.scroll({top:0, left: 0})
+    $(document).on("click", "#contact", { vue: this }, function(e) {
+      window.scroll({ top: 0, left: 0 });
       e.data.vue.toGo("/contact");
     });
   },
   methods: {
     toGo(ruta) {
-      window.scroll({top:0, left: 0})
+      window.scroll({ top: 0, left: 0 });
       this.$router.push({ path: ruta });
-      this.$router.go(0);
     }
   }
 };
@@ -108,6 +106,6 @@ export default {
 
 <style scoped>
 #logo {
-  width: 70px;
+  width: 3rem;
 }
 </style>

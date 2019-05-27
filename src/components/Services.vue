@@ -14,7 +14,7 @@
               <img src="img/service-tutorias-linea.jpg" alt height="300">
             </div>
             <!-- <h4>Tutorias en Linea</h4> -->
-            <p align="justify">
+            <p class="margin-top" align="justify">
               Este servicio es ideal para aquel trader que ya tenga conocimiento. Evaluaremos tu operativa y
               reforzaremos aquellas zonas donde sientas que tienes debilidad.
             </p>
@@ -26,7 +26,7 @@
               <img src="img/service-flujo-tiempo-real.jpg" alt height="300">
             </div>
             <!-- <h4>Flujo de Opciones en Tiempo Real (Proximamente)</h4> -->
-            <p align="justify">
+            <p class="margin-top" align="justify">
               En este servicio te proporcionaremos alertas institucionales y su flujo en tiempo real.
               Además estaremos informándote y haciendo observaciones del mercado, análisis técnicos de
               algunas compañías e ideas sobre potenciales entradas.
