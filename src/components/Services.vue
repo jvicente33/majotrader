@@ -9,7 +9,7 @@
       </div>
       <div class="row">
         <div class="col-lg-6">
-          <div class="single-service">
+          <div class="single-service" @click="toGo('/contact')">
             <div class="thumb">
               <img src="img/service-tutorias-linea.jpg" alt height="300">
             </div>
@@ -21,7 +21,7 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <div class="single-service">
+          <div class="single-service" @click="toGo('/contact')">
             <div class="thumb">
               <img src="img/service-flujo-tiempo-real.jpg" alt height="300">
             </div>
@@ -37,4 +37,16 @@
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  methods: {
+    toGo(ruta) {
+      window.scroll({ top: 0, left: 0 });
+      this.$router.push({ path: ruta });
+    }
+  }
+};
+</script>
+
 

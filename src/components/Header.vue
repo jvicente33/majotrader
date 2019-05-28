@@ -23,7 +23,7 @@
             </ul>
           </div>
           <div class="col-lg-6 col-sm-6 col-8 header-top-right no-padding">
-            <a href="stocktradermj@gmail.com">info@tradersplanet.us</a>
+            <a @click="toGo('/contact')">info@tradersplanet.us</a>
           </div>
         </div>
       </div>

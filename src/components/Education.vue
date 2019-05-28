@@ -9,7 +9,7 @@
       </div>
       <div class="row">
         <div class="col-lg-6">
-          <div class="single-service">
+          <div class="single-service" @click="toGo('/contact')">
             <div class="thumb">
               <img src="img/education-opciones-financieras.jpg" alt height="300">
             </div>
@@ -22,7 +22,7 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <div class="single-service">
+          <div class="single-service" @click="toGo('/contact')">
             <div class="thumb">
               <img src="img/education-trading-institucional.jpg" alt height="300">
             </div>
@@ -35,7 +35,7 @@
           </div>
         </div>
         <div class="col-lg-6" v-if="limit > 2">
-          <div class="single-service">
+          <div class="single-service" @click="toGo('/contact')">
             <div class="thumb">
               <img src="img/education-venta-opciones.jpg" alt height="300">
             </div>
@@ -54,7 +54,13 @@
 
 <script>
 export default {
-  props: ["showTitle", "showSubtitle", "title", "subtitle", "limit"]
+  props: ["showTitle", "showSubtitle", "title", "subtitle", "limit"],
+  methods: {
+    toGo(ruta) {
+      window.scroll({ top: 0, left: 0 });
+      this.$router.push({ path: ruta });
+    }
+  }
 };
 </script>
 
