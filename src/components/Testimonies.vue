@@ -1,5 +1,5 @@
 <template>
-  <section class="feedback-area section-gap relative" id="feedback">
+  <section class="feedback-area section-gap-testimonio relative" id="feedback">
     <div class="overlay overlay-bg"></div>
     <div class="container">
       <div class="row justify-content-center">
@@ -102,3 +102,14 @@
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  created(){
+    this.$forceUpdate()
+  },
+  mounted(){
+    this.$forceUpdate();
+  }
+}
+</script>

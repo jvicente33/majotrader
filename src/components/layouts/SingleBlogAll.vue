@@ -1,8 +1,8 @@
 <template>
   <div>
     <header-app></header-app>
-    <banner-app title="Blog"></banner-app>
-    <blog-app :posts="posts"></blog-app>
+    <banner-app :title="posts.title"></banner-app>
+    <single-blog-app :post="posts"></single-blog-app>
     <footer-app></footer-app>
     <loading
       :active.sync="isLoading"
@@ -19,7 +19,7 @@
 import BannerApp from "../BannerTwo";
 import HeaderApp from "../Header.vue";
 import FooterApp from "../Footer.vue";
-import BlogApp from "../Blog.vue";
+import SingleBlogApp from "../SingleBlog.vue";
 
 import axios from "../../config/axios.js";
 
@@ -33,10 +33,11 @@ export default {
     return {
       isLoading: true,
       fullPage: false,
+      idPost: '',
       posts: ''
     };
   },
-  components: { BannerApp, HeaderApp, FooterApp, Loading, BlogApp },
+  components: { BannerApp, HeaderApp, FooterApp, Loading, SingleBlogApp },
   methods: {
     doAjax() {
       this.isLoading = true;
@@ -48,16 +49,16 @@ export default {
     onCancel() {
       console.log("User cancelled the loader.");
     },
-    async getPost() {
+    async getPost(id) {
       try {
-        let posts = await axios.post("post/all", {public: true});
-        this.posts = posts.data.posts;
+        let posts = await axios.get(`/post/${id}`, {});
+        this.posts = posts.data.post;
         this.isLoading = false;
       } catch (error) {
         console.log(error);
         this.isLoading = false;
       }
-    }
+    },
   },
   mounted: function() {
     this.$nextTick(function() {
@@ -65,7 +66,9 @@ export default {
     });
   },
   created(){
-    this.getPost()
+    window.scroll({ top: 0, left: 0 });
+    this.idPost = this.$route.params.idPost
+    this.getPost(this.idPost)
   }
 };
 </script>

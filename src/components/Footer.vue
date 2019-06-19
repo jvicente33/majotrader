@@ -125,13 +125,13 @@
             <h6>Siguenos</h6>
             <p>Redes sociales</p>
             <div class="footer-social d-flex align-items-center">
-              <a href="https://www.facebook.com/majotraders" target="_blank">
+              <a href="https://www.facebook.com/tradersplanet" target="_blank">
                 <i class="fa fa-facebook"></i>
               </a>
-              <a href="https://twitter.com/majotrader" target="_blank">
+              <a href="https://twitter.com/majotplanet" target="_blank">
                 <i class="fa fa-twitter"></i>
               </a>
-              <a href="https://www.instagram.com/majotrader/" target="_blank">
+              <a href="https://www.instagram.com/majotplanet/" target="_blank">
                 <i class="fa fa-instagram"></i>
               </a>
             </div>

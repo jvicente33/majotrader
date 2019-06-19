@@ -6,17 +6,17 @@
           <div class="col-lg-6 col-sm-6 col-4 header-top-left no-padding">
             <ul>
               <li>
-                <a href="https://www.facebook.com/majotraders" target="_blank">
+                <a href="https://www.facebook.com/tradersplanet" target="_blank">
                   <i class="fa fa-facebook"></i>
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com/majotrader" target="_blank">
+                <a href="https://twitter.com/majotplanet" target="_blank">
                   <i class="fa fa-twitter"></i>
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/majotrader/" target="_blank">
+                <a href="https://www.instagram.com/majotplanet" target="_blank">
                   <i class="fa fa-instagram"></i>
                 </a>
               </li>
@@ -50,7 +50,7 @@
               <a @click="toGo('/services')" id="services" style="cursor: pointer">Servicios</a>
             </li>
             <li>
-              <a id="blog">Blog</a>
+              <a @click="toGo('/blog')" id="blog" style="cursor: pointer">Blog</a>
             </li>
             <li>
               <a @click="toGo('/contact')" id="contact" style="cursor: pointer">Contacto</a>
@@ -87,6 +87,10 @@ export default {
     $(document).on("click", "#services", { vue: this }, function(e) {
       window.scroll({ top: 0, left: 0 });
       e.data.vue.toGo("/services");
+    });
+    $(document).on("click", "#blog", { vue: this }, function(e) {
+      window.scroll({ top: 0, left: 0 });
+      e.data.vue.toGo("/blog");
     });
     $(document).on("click", "#contact", { vue: this }, function(e) {
       window.scroll({ top: 0, left: 0 });
