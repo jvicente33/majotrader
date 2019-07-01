@@ -3,6 +3,8 @@
     <div class="container">
       <div class="row d-flex align-items-center justify-content-center">
         <div class="about-content col-lg-10">
+          <br />
+          <br>
           <p class="text-white text-news" align="justify">
             <!-- <a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="contact.html"> Contact Us</a> -->
             Es una sesión informativa que comparto con ustedes en las
@@ -24,8 +26,7 @@
 
 
 <style scoped>
-.text-news{
-
+.text-news {
 }
 </style>
 

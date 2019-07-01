@@ -50,7 +50,8 @@
               <a @click="toGo('/services')" id="services" style="cursor: pointer">Servicios</a>
             </li>
             <li>
-              <a @click="toGo('/blog')" id="blog" style="cursor: pointer">Blog</a>
+              <a>Blog</a>
+              <!-- @click="toGo('/blog')" id="blog" style="cursor: pointer" -->
             </li>
             <li>
               <a @click="toGo('/contact')" id="contact" style="cursor: pointer">Contacto</a>
