@@ -1,5 +1,5 @@
 <template>
-  <section class="banner-landing overflow-hidden relative" id="home">
+  <section class="banner-landing overflow-hidden relative">
     <video class="video-has-background" autoplay muted loop id="myVideo">
       <source src="/img/Busy-People.mp4" type="video/mp4">
     </video>

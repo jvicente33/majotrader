@@ -2390,6 +2390,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: url(../img/inicio.jpg) center;
   background-size: cover;
 }
+
+.banner-news {
+  padding-top: 50px;
+  background: url(../img/news.jpg) center;
+  background-size: cover;
+}
 .banner-landing {
   height: 100vh;
   display: flex;

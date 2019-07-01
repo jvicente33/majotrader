@@ -10,6 +10,8 @@
     <!-- Start About -->
     <tips-app></tips-app>
 
+    <news-app></news-app>
+
     <!-- Start About -->
     <!--<about-app></about-app>-->
 
@@ -56,6 +58,7 @@ import ProjectsCompletedApp from "../ProjectsCompleted.vue";
 import ProjectsFinishApp from "../ProjectsFinish.vue";
 import TestimoniesApp from "../Testimonies.vue";
 import EducationApp from "../Education.vue";
+import NewsApp from "../News.vue";
 
 // Import component
 import Loading from "vue-loading-overlay";
@@ -81,7 +84,8 @@ export default {
     ProjectsFinishApp,
     TestimoniesApp,
     Loading,
-    EducationApp
+    EducationApp,
+    NewsApp
   },
   methods: {
     doAjax() {
