@@ -21,6 +21,8 @@ import HeaderApp from "../Header.vue";
 import FooterApp from "../Footer.vue";
 import SingleBlogApp from "../SingleBlog.vue";
 
+import ApiBlog from "../../utils/api.blog";
+
 import axios from "../../config/axios.js";
 
 // Import component
@@ -33,8 +35,8 @@ export default {
     return {
       isLoading: true,
       fullPage: false,
-      idPost: '',
-      posts: ''
+      idPost: "",
+      posts: ""
     };
   },
   components: { BannerApp, HeaderApp, FooterApp, Loading, SingleBlogApp },
@@ -51,24 +53,27 @@ export default {
     },
     async getPost(id) {
       try {
-        let posts = await axios.get(`/post/${id}`, {});
-        this.posts = posts.data.post;
+        // let posts = await axios.get(`/post/${id}`, {});
+        // this.posts = posts.data.post;
+        this.posts = ApiBlog.find(post => {
+          return id == post._id;
+        });
         this.isLoading = false;
       } catch (error) {
         console.log(error);
         this.isLoading = false;
       }
-    },
+    }
   },
   mounted: function() {
     this.$nextTick(function() {
       // this.doAjax();
     });
   },
-  created(){
+  created() {
     window.scroll({ top: 0, left: 0 });
-    this.idPost = this.$route.params.idPost
-    this.getPost(this.idPost)
+    this.idPost = this.$route.params.idPost;
+    this.getPost(this.idPost);
   }
 };
 </script>

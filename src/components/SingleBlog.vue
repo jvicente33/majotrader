@@ -4,16 +4,14 @@
       <div class="row">
         <div class="col-lg-8 post-list blog-post-list">
           <div class="single-post">
-            <img class="img-fluid ext" src="img/default-image.png" alt>
+            <img class="img-fluid ext" :src="'img/blog/'+post.background" alt />
             <ul class="tags">
               <li v-for="(tag, i) in post.tags" :key="i">
                 <a style="color: blue;">#{{tag}} &nbsp; &nbsp;</a>
               </li>
             </ul>
             <a>
-              <h1>
-                {{post.title}}
-              </h1>
+              <h1>{{post.title}}</h1>
             </a>
             <div class="content-wrap">
               <div v-html="post.contentHtml"></div>
@@ -22,9 +20,9 @@
         </div>
         <div class="col-lg-4 sidebar">
           <div class="single-widget protfolio-widget">
-            <img id="img-majo" src="img/majo.png" alt>
+            <img id="img-majo" src="img/majo.png" alt />
             <a>
-              <h4>Maria Manrique</h4>
+              <h4>Econ. Maria Manrique</h4>
             </a>
             <p
               align="justify"
@@ -55,8 +53,8 @@
 
 <script>
 export default {
-    props: ['post']
-}
+  props: ["post"]
+};
 </script>
 
 <style scoped>

@@ -23,6 +23,8 @@ import BlogApp from "../Blog.vue";
 
 import axios from "../../config/axios.js";
 
+import ApiBlog from '../../utils/api.blog'
+
 // Import component
 import Loading from "vue-loading-overlay";
 // Import stylesheet
@@ -50,8 +52,9 @@ export default {
     },
     async getPost() {
       try {
-        let posts = await axios.post("post/all", {public: true});
-        this.posts = posts.data.posts;
+        // let posts = await axios.post("post/all", {public: true});
+        // this.posts = posts.data.posts;
+        this.posts = ApiBlog;
         this.isLoading = false;
       } catch (error) {
         console.log(error);

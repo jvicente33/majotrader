@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-lg-8 post-list blog-post-list">
           <div class="single-post" v-for="(post, index) in posts" :key="index">
-            <img class="img-fluid ext" src="img/default-image.png" alt>
+            <img class="img-fluid ext" :src="'img/blog/'+post.background" alt>
             <ul class="tags">
               <li v-for="(tag, i) in post.tags" :key="i">
                 <a style="color: blue;">#{{tag}} &nbsp; &nbsp;</a>
@@ -30,7 +30,7 @@
           <div class="single-widget protfolio-widget">
             <img id="img-majo" src="img/majo.png" alt>
             <a>
-              <h4>Maria Manrique</h4>
+              <h4>Econ. Maria Manrique</h4>
             </a>
             <p
               align="justify"

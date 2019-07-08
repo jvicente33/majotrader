@@ -3,9 +3,11 @@
     <div class="container">
       <div class="row d-flex align-items-center justify-content-center">
         <div class="about-content col-lg-10">
-          <br />
-          <br>
-          <p class="text-white text-news" align="justify">
+          <div class="title-full">
+            <p class="text-white maxx-text">PRE-MARKET</p>
+            <h1 class="text-white max-text">NEWS</h1>
+          </div>
+          <p class="text-white text-news min-text" align="justify">
             <!-- <a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="contact.html"> Contact Us</a> -->
             Es una sesión informativa que comparto con ustedes en las
             historias de Instragram y facebook, para todos los que
@@ -17,16 +19,30 @@
             instagram @majotplanet facebook @tradersplanet lunes a
             viernes 1 hora antes de la apertura del mercado americano.
           </p>
-          <p class="text-white">Majo.</p>
+          <p class="text-white min-text">Majo.</p>
         </div>
       </div>
     </div>
   </section>
 </template>
 
-
 <style scoped>
-.text-news {
+.max-text {
+  font-size: 12em;
+}
+
+.maxx-text {
+  font-size: 5em;
+}
+
+.min-text {
+  font-size: 1.2em;
+}
+.title-full{
+  
+}
+.about-content{
+  margin-top: 0px;
 }
 </style>
 

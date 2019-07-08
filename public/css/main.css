@@ -2392,8 +2392,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .banner-news {
-  padding-top: 50px;
-  background: url(../img/news.jpg) center;
+  /* padding-top: 50px; */
+  background: url(../img/fondo_news.jpg) center;
   background-size: cover;
 }
 .banner-landing {

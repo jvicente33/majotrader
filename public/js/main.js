@@ -226,6 +226,14 @@ $(document).ready(function() {
     dots: true
   });
 
+  $('.active-review-carusel-proa').owlCarousel({
+    items: 1,
+    loop: true,
+    autoplay: true,
+    margin: 30,
+    dots: true
+  });
+
   $('.active-info-carusel').owlCarousel({
     items: 1,
     loop: true,
