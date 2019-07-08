@@ -2,7 +2,7 @@
   <section class="banner-news relative">
     <div class="container">
       <div class="row d-flex align-items-center justify-content-center">
-        <div class="about-content col-lg-10">
+        <div class="about-content col-lg-10 col-md-10 col-sm-10">
           <div class="title-full">
             <p class="text-white maxx-text">PRE-MARKET</p>
             <h1 class="text-white max-text">NEWS</h1>
@@ -38,11 +38,29 @@
 .min-text {
   font-size: 1.2em;
 }
-.title-full{
-  
-}
-.about-content{
+.about-content {
   margin-top: 0px;
+}
+
+@media screen and (max-width: 600px) {
+  .max-text {
+    font-size: 8em;
+  }
+
+  .maxx-text {
+    font-size: 2em;
+  }
+
+  .min-text {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 328px) {
+  .max-text {
+    font-size: 6em;
+  }
 }
 </style>
 
