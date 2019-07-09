@@ -22,7 +22,7 @@
           <div class="single-widget protfolio-widget">
             <img id="img-majo" src="img/majo.png" alt />
             <a>
-              <h4>Econ. Maria Manrique</h4>
+              <h4>Maria Manrique</h4>
             </a>
             <p
               align="justify"
@@ -64,6 +64,6 @@ export default {
 
 .ext {
   width: 100%;
-  height: 350px;
+  /* height: 350px; */
 }
 </style>

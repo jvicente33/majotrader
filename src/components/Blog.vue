@@ -11,9 +11,9 @@
               </li>
             </ul>
             <a @click="goSinglePost(post._id)" style="cursor: pointer">
-              <h1>{{post.title}}</h1>
+              <h1 class="min-text" >{{post.title}}</h1>
             </a>
-            <p>{{post.contentText.substring(0,300)}}...</p>
+            <p align="justify">{{post.contentText.substring(0,300)}}...</p>
             <hr>
           </div>
         </div>
@@ -30,7 +30,7 @@
           <div class="single-widget protfolio-widget">
             <img id="img-majo" src="img/majo.png" alt>
             <a>
-              <h4>Econ. Maria Manrique</h4>
+              <h4>Maria Manrique</h4>
             </a>
             <p
               align="justify"
@@ -144,10 +144,16 @@ export default {
 }
 .ext {
   width: 100%;
-  height: 350px;
+  /* height: 350px; */
 }
 hr{
   background: rgb(177, 177, 177);
+}
+
+@media screen and (max-width: 330px) {
+  .min-text{
+    font-size: 1.8em;
+  }
 }
 </style>
 
