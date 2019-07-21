@@ -8,57 +8,53 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-6">
-          <div class="single-service" @click="toGo('/contact')">
+        <div class="col-lg-6" v-for="(curse, index) in cursos" :key="index">
+          <div class="single-service" @click="showDetails(curse)">
             <div class="thumb">
-              <img src="img/education-opciones-financieras.jpg" alt height="300">
+              <img :src="'img/' + curse.img" alt height="300" />
             </div>
             <!-- <h4>Curso de Opciones Financieras</h4> -->
-            <p class="margin-top" align="justify">
-              Esta capacitación esta diseñada para brindarte las habilidades y confianza que necesitas para
-              convertirte en un comerciante de las Opciones Financieras. Esta capacitación es desde cero no
-              necesitas tener conocimiento previo sobre el mercado bursátil.
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="single-service" @click="toGo('/contact')">
-            <div class="thumb">
-              <img src="img/education-trading-institucional.jpg" alt height="300">
-            </div>
-            <!-- <h4>Curso de Trading Institucional Opciones (Proximamente)</h4> -->
-            <p class="margin-top" align="justify">
-              En esta capacitación te enseñaremos a seguir la huella institucional. A detectar las mejores
-              entradas de las ballenas del mercado y su flujo en tiempo real.
-              (Para esta capacitación se necesita tener conocimiento previo de las Opciones Financieras)
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-6" v-if="limit > 2">
-          <div class="single-service" @click="toGo('/contact')">
-            <div class="thumb">
-              <img src="img/education-venta-opciones.jpg" alt height="300">
-            </div>
-            <!-- <h4>Curso de Ventas de Opciones (Proximamente)</h4> -->
-            <p class="margin-top" align="justify">
-              Aprenderás como sacar una mayor rentabilidad de tu capital, gracias a las ventas de opciones, con
-              nuestro sistema totalmente detallado.
-              (Para esta capacitación se necesita tener conocimiento previo de las Opciones Financieras)
-            </p>
+            <p class="margin-top" align="justify">{{curse.content}}</p>
           </div>
         </div>
       </div>
     </div>
+    <modals-container />
   </section>
 </template>
 
 <script>
+import ModalDetails from "./ModalDetails.vue";
+import data from "../utils/api.curso.js";
 export default {
+  data() {
+    return {
+      cursos: data.filter((i, j) => j <= this.limit)
+    };
+  },
+  created() {
+    
+  },
   props: ["showTitle", "showSubtitle", "title", "subtitle", "limit"],
   methods: {
     toGo(ruta) {
       window.scroll({ top: 0, left: 0 });
       this.$router.push({ path: ruta });
+    },
+    showDetails(data) {
+      this.$modal.show(
+        ModalDetails,
+        {
+          data
+        },
+        {
+          draggable: true,
+          width: 400,
+          height: 500,
+          adaptive: true,
+          overlayTransition: 'overlay'
+        }
+      );
     }
   }
 };

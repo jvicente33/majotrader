@@ -1,7 +1,7 @@
 let data = [
   {
     _id: 1,
-    title: "Economía a su alcance",
+    title: 'Economía a su alcance',
     contentText: `A través de este portal, con elementos sencillos y fácil de asimilar para
     cualquier ciudadano, vamos a iniciar una serie de artículos que esperamos
     ayuden a comprender como el entorno económico afecta cada una de las
@@ -47,13 +47,13 @@ let data = [
       </p>
       <small><strong>Econ. José Manrique</strong></small>
       `,
-    tags: ["Economia", "Familia", "Trader"],
-    author: "Maria Manrique",
-    background: "economia1.jpg"
+    tags: ['Economia', 'Familia', 'Trader'],
+    author: 'Maria Manrique',
+    background: 'economia1.jpg'
   },
   {
     _id: 2,
-    title: "Economía a su alcance - Parte II",
+    title: 'Economía a su alcance - Parte II',
     contentText: `Existe una ecuación en economía que define el Ingreso como la suma del
     Consumo más el ahorro más la Inversión. Y= C+S+I, (s: save, en español ahorro)
     esto quiere decir, que el ingreso que obtenemos lo distribuimos entre el consumo
@@ -109,10 +109,34 @@ let data = [
       </p>
       <small><strong>Econ. José Manrique</strong></small>
       `,
-    tags: ["Economia", "Familia", "Trader"],
-    author: "Maria Manrique",
-    background: "economia2.jpg"
+    tags: ['Economia', 'Familia', 'Trader'],
+    author: 'Maria Manrique',
+    background: 'economia2.jpg'
+  },
+  {
+    _id: 3,
+    title: 'Economía a su alcance - Parte III',
+    contentText: `En el primer artículo de economía a su alcance, nos referíamos a la familia conjuntamente con el estado y la empresa como agentes o sujetos económicos de la producción. Son ellos los propietarios o quienes manejan los factores de la producción, que son a saber, Tierra, Trabajo y Capital. El  marco para cada uno de estos factores donde se ofrecen y demandan los productos y en el que se llega a un precio al cual se realiza la transacción,  es lo que se conoce como mercado.
+    En el mercado se ofrecen y se demandan bienes de consumo directo como zapatos, alimentos, electrodomésticos, etc., estos son bienes acabados. Los sujetos del mismo serán el comerciante minorista y el consumidor. También se realizan transacciones con materias primas, tales como el acero o productos agrícolas para procesar, como el algodón o el trigo entre otros, en este caso los sujetos de la transacción serán empresarios, el fabricante de acero o el cultivador por un lado y por el otro, el fabricante de vehículos o el de telas. El trabajo del hombre  se intercambia en un mercado cuyo precio es el salario, en estas negociaciones interviene representantes de los grupos interesados como los  sindicatos, por un lado y las asociaciones patronales o de empresarios por el otro.
+    Si el factor Tierra (productos terminados y materias primas) y el factor Trabajo (mano de obra) tienen su mercado, resulta lógico que el Capital, pieza fundamental del sistema económico, se comercialice también en un mercado: el llamado Mercado de Capitales.`,
+    contentHtml: `
+      <h3 align="justify">Factores de Producción y los Mercados </h3>
+      <br>
+      <p align="justify">
+      En el primer artículo de economía a su alcance, nos referíamos a la familia conjuntamente con el estado y la empresa como agentes o sujetos económicos de la producción. Son ellos los propietarios o quienes manejan los factores de la producción, que son a saber, Tierra, Trabajo y Capital. El  marco para cada uno de estos factores donde se ofrecen y demandan los productos y en el que se llega a un precio al cual se realiza la transacción,  es lo que se conoce como mercado.
+      En el mercado se ofrecen y se demandan bienes de consumo directo como zapatos, alimentos, electrodomésticos, etc., estos son bienes acabados. Los sujetos del mismo serán el comerciante minorista y el consumidor. También se realizan transacciones con materias primas, tales como el acero o productos agrícolas para procesar, como el algodón o el trigo entre otros, en este caso los sujetos de la transacción serán empresarios, el fabricante de acero o el cultivador por un lado y por el otro, el fabricante de vehículos o el de telas. El trabajo del hombre  se intercambia en un mercado cuyo precio es el salario, en estas negociaciones interviene representantes de los grupos interesados como los  sindicatos, por un lado y las asociaciones patronales o de empresarios por el otro.
+      Si el factor Tierra (productos terminados y materias primas) y el factor Trabajo (mano de obra) tienen su mercado, resulta lógico que el Capital, pieza fundamental del sistema económico, se comercialice también en un mercado: el llamado Mercado de Capitales.
+      <h3 align="justify">Los Mercados de Capitales</h3>
+      </p>
+      <p align="justify">
+      ¿Quiénes son los sujetos de este mercado? Ofrecen capital aquellos que hayan ahorrado previamente y deseen colocar sus fondos a una determinada rentabilidad y demandan capital en este mercado, aquellos que sabiendo donde invertirlo, creen que pueden ofrecer aquella rentabilidad y obtener además una ganancia adicional. O sea el mercado de capitales  está constituido básicamente por ahorradores que desean colocar su dinero e inversores que quieren comprarlo para realizar determinado negocio. En este mercado el precio es el tipo de interés. En general, los ahorradores y los inversores no intercambian directamente el capital, sino que existen instituciones públicas y privadas  cuya función es servir de intermediarios en este intercambio, tales como el Banco Central, los Bancos, compañías de seguros, fondos de inversión, la Bolsa de valores etc.
+      </p>
+      <small><strong>Econ. José Manrique</strong></small>
+      `,
+    tags: ['Economia', 'Familia', 'Trader'],
+    author: 'Maria Manrique',
+    background: 'economia3.png'
   }
-];
+]
 
-module.exports = data;
+module.exports = data

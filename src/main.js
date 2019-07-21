@@ -5,7 +5,7 @@ import VModal from 'vue-js-modal'
 import VueCarousel from 'vue-carousel';
 
 Vue.use(VueCarousel);
-Vue.use(VModal, { dialog: true })
+Vue.use(VModal, { dialog: true, dynamic: true, dynamicDefaults: { clickToClose: false } })
 
 Vue.config.productionTip = false
 
