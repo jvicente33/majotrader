@@ -4,7 +4,9 @@
 
 'use strict'
 
-const stripe = require('stripe')('sk_test_4EpcKa42hLuxBfuBPox2INRx00CJeIwAqP')
+require('dotenv').config();
+
+const stripe = require('stripe')(process.env.KEY_SECRET_STRIPE)
 
 async function createSession(req, res) {
   try {
