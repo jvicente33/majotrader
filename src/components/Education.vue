@@ -29,17 +29,27 @@ import data from "../utils/api.curso.js";
 export default {
   data() {
     return {
-      cursos: data.filter((i, j) => j <= this.limit)
+      cursos: [],
+      data
     };
   },
   created() {
-    
+    this.dataLimit()
   },
   props: ["showTitle", "showSubtitle", "title", "subtitle", "limit"],
   methods: {
     toGo(ruta) {
       window.scroll({ top: 0, left: 0 });
       this.$router.push({ path: ruta });
+    },
+    dataLimit(){
+      if(this.limit <= 2){
+        for(let i = 0; i < this.limit; i++){
+          this.cursos.push(this.data[i])
+        }
+      }else{
+        this.cursos = this.data
+      }
     },
     showDetails(data) {
       this.$modal.show(
@@ -50,7 +60,7 @@ export default {
         {
           draggable: true,
           width: 400,
-          height: 500,
+          height: 550,
           adaptive: true,
           overlayTransition: 'overlay'
         }

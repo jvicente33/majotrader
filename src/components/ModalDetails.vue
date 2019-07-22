@@ -10,14 +10,18 @@
         </div>
         <div class="summary">
           <p align="justify">{{data.content}}</p>
+          <h5>Precio: ${{data.price/100}}</h5>
+          <br />
         </div>
         <div class="continue">
-          <!-- <a href="#">Pagar &rarr;</a> -->
-          <a
-            style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
-            @click="pay"
-            target="_blank"
-          >Pagar</a>
+          <div class="col-lg-12">
+            <button class="separar genric-btn info circle" @click="contact">Contactar</button>
+            <button
+              :class="data.temary ? 'separar genric-btn success circle' : 'separar genric-btn dark circle'"
+              @click="temary(data.temary)"
+            >Temario</button>
+            <button class="separar genric-btn primary circle" @click="pay">Pagar</button>
+          </div>
         </div>
       </div>
       <div class="fm-card-footer">
@@ -33,35 +37,47 @@
 </template>
 
 <script>
+import axios from "../config/axios.js";
 export default {
   props: ["data"],
   data() {
     return {};
   },
   methods: {
-    pay() {
-      var stripe = Stripe("pk_test_QZpi1o3I2mmesolLsarUMTCG00AAaKHoEh");
-
-      stripe
-        .redirectToCheckout({
-          items: [{ sku: "sku_FTgnE5Cp7TGja5", quantity: 1 }],
-
-          // Do not rely on the redirect to the successUrl for fulfilling
-          // purchases, customers may not always reach the success_url after
-          // a successful payment.
-          // Instead use one of the strategies described in
-          // https://stripe.com/docs/payments/checkout/fulfillment
-          successUrl: window.location.protocol + "//tradersplanet.us/success",
-          cancelUrl: window.location.protocol + "//tradersplanet.us/canceled"
-        })
-        .then(function(result) {
-          if (result.error) {
-            // If `redirectToCheckout` fails due to a browser or network
-            // error, display the localized error message to your customer.
-            var displayError = document.getElementById("error-message");
-            displayError.textContent = result.error.message;
-          }
+    contact() {
+      this.$router.push({ name: "contact" });
+    },
+    temary(name) {
+      if (name) {
+        const link = document.createElement("a");
+        link.href = "https://tradersplanet.us/view/pdf/" + name; //urlchange
+        link.setAttribute("target", "_blank");
+        document.body.appendChild(link);
+        link.click();
+      }
+    },
+    async pay() {
+      try {
+        let data = await axios.post("/create/session", {
+          name: `Compra de Curso`,
+          title: this.data.title,
+          price: this.data.price,
+          img: this.data.img
         });
+        let stripe = Stripe("pk_live_f7jgBFPatS0gY6mzCWNAXH1W00irZzbJZO");
+        stripe
+          .redirectToCheckout({
+            sessionId: data.data.session.id
+          })
+          .then(function(result) {
+            if (result.error) {
+              var displayError = document.getElementById("error-message");
+              displayError.textContent = result.error.message;
+            }
+          });
+      } catch (error) {
+        console.log(error);
+      }
     }
   }
 };
@@ -70,7 +86,7 @@ export default {
 
 <style scoped>
 * {
-  transition: all 2.5s;
+  transition: all 0s;
 }
 
 .fm-card-header {

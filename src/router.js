@@ -7,6 +7,7 @@ import Services from './components/layouts/ServicesAll.vue'
 import Education from './components/layouts/EducationAll.vue'
 import Blog from './components/layouts/BlogAll.vue'
 import SingleBlog from './components/layouts/SingleBlogAll.vue'
+import PaySuccess from './components/PaySuccess.vue'
 
 Vue.use(Router)
 
@@ -47,6 +48,11 @@ export default new Router({
       path: '/single-blog/:idPost',
       name: 'single-blog',
       component: SingleBlog
+    },
+    {
+      path: '/pay/success',
+      name: 'paysuccess',
+      component: PaySuccess
     }
   ]
 })

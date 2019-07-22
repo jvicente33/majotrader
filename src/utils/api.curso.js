@@ -6,7 +6,7 @@ const data = [
         necesitas tener conocimiento previo sobre el mercado bursátil.`,
         img: 'education-opciones-financieras.jpg',
         price: 200,
-        temary: ''
+        temary: 'curso1.pdf'
     },
     {
         title: 'Curso de Trading Institucional Opciones',
@@ -15,7 +15,7 @@ const data = [
         (Para esta capacitación se necesita tener conocimiento previo de las Opciones Financieras)`,
         img: 'education-trading-institucional.jpg',
         price: 200,
-        temary: ''
+        temary: null
     },
     {
         title: 'Curso de Ventas de Opciones',
@@ -24,7 +24,7 @@ const data = [
         (Para esta capacitación se necesita tener conocimiento previo de las Opciones Financieras)`,
         img: 'education-venta-opciones.jpg',
         price: 200,
-        temary: ''
+        temary: null
     }
 ]
 
