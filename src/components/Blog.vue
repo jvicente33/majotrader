@@ -4,23 +4,23 @@
       <div class="row">
         <div class="col-lg-8 post-list blog-post-list">
           <div class="single-post" v-for="(post, index) in posts" :key="index">
-            <img class="img-fluid ext" :src="'img/blog/'+post.background" alt>
+            <img class="img-fluid ext" :src="'img/blog/'+post.background" alt />
             <ul class="tags">
               <li v-for="(tag, i) in post.tags" :key="i">
                 <a style="color: blue;">#{{tag}} &nbsp; &nbsp;</a>
               </li>
             </ul>
             <a @click="goSinglePost(post._id)" style="cursor: pointer">
-              <h1 class="min-text" >{{post.title}}</h1>
+              <h1 class="min-text">{{post.title}}</h1>
             </a>
             <p align="justify">{{post.contentText.substring(0,300)}}...</p>
-            <hr>
+            <hr />
           </div>
         </div>
         <div class="col-lg-4 sidebar">
           <div class="single-widget search-widget">
             <form class="example" style="margin:auto;max-width:300px">
-              <input type="text" placeholder="Buscar publicaciones" name="search2">
+              <input type="text" placeholder="Buscar publicaciones" name="search2" />
               <button type="submit">
                 <i class="fa fa-search"></i>
               </button>
@@ -28,9 +28,11 @@
           </div>
 
           <div class="single-widget protfolio-widget">
-            <img id="img-majo" src="img/majo.png" alt>
-            <a>
-              <h4>Maria Manrique</h4>
+            <a @click="goAbout" style="cursor: pointer;">
+              <img id="img-majo" src="img/majo.png" alt />
+              <a>
+                <h4>Maria Manrique</h4>
+              </a>
             </a>
             <p
               align="justify"
@@ -122,16 +124,17 @@
 </template>
 
 <script>
-
 export default {
   data() {
-    return {
-    };
+    return {};
   },
-  props: ['posts'],
+  props: ["posts"],
   methods: {
     goSinglePost(id) {
       this.$router.push({ path: `/single-blog/${id}` });
+    },
+    goAbout(){
+      this.$router.push({ path: `/about` });
     }
   }
 };
@@ -146,12 +149,12 @@ export default {
   width: 100%;
   /* height: 350px; */
 }
-hr{
+hr {
   background: rgb(177, 177, 177);
 }
 
 @media screen and (max-width: 330px) {
-  .min-text{
+  .min-text {
     font-size: 1.8em;
   }
 }

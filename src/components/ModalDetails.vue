@@ -10,7 +10,8 @@
         </div>
         <div class="summary">
           <p align="justify">{{data.content}}</p>
-          <h5>Precio: ${{data.price/100}}</h5>
+          <h5 v-if="data.offprice != 0">Precio: <s>${{data.price/100}}</s> ${{data.offprice/100}} usd</h5>
+          <h5 v-else>Precio: ${{data.price/100}} usd</h5>
           <br />
         </div>
         <div class="continue">

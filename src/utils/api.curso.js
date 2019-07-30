@@ -4,9 +4,10 @@ const data = [
         content: `Esta capacitación esta diseñada para brindarte las habilidades y confianza que necesitas para
         convertirte en un comerciante de las Opciones Financieras. Esta capacitación es desde cero no
         necesitas tener conocimiento previo sobre el mercado bursátil.`,
-        img: 'education-opciones-financieras.jpg',
-        price: 200,
-        temary: 'curso1.pdf'
+        img: 'education-opciones-financieras-promo.jpg',
+        price: 59000,
+        offprice: 50000,
+        temary: 'curso-opciones-financieras-promo.pdf'
     },
     {
         title: 'Curso de Trading Institucional Opciones',
@@ -14,7 +15,8 @@ const data = [
         entradas de las ballenas del mercado y su flujo en tiempo real.
         (Para esta capacitación se necesita tener conocimiento previo de las Opciones Financieras)`,
         img: 'education-trading-institucional.jpg',
-        price: 200,
+        price: 100,
+        offprice: 0,
         temary: null
     },
     {
@@ -23,7 +25,8 @@ const data = [
         nuestro sistema totalmente detallado.
         (Para esta capacitación se necesita tener conocimiento previo de las Opciones Financieras)`,
         img: 'education-venta-opciones.jpg',
-        price: 200,
+        price: 100,
+        offprice: 0,
         temary: null
     }
 ]
