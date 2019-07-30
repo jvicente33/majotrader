@@ -62,7 +62,7 @@ export default {
         let data = await axios.post("/create/session", {
           name: `Compra de Curso`,
           title: this.data.title,
-          price: this.data.price,
+          price: this.data.offprice == 0 ? this.data.price : this.data.offprice,
           img: this.data.img
         });
         let stripe = Stripe("pk_live_f7jgBFPatS0gY6mzCWNAXH1W00irZzbJZO");
