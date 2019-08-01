@@ -59,8 +59,8 @@ export default {
         },
         {
           draggable: true,
-          width: 400,
-          height: 550,
+          width: 450,
+          height: 600,
           adaptive: true,
           overlayTransition: 'overlay'
         }

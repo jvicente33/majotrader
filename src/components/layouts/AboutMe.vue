@@ -11,7 +11,7 @@
       :is-full-page="fullPage"
       :opacity="1"
       loader="dots"
-    ></loading> -->
+    ></loading>-->
   </div>
 </template>
 
@@ -20,6 +20,8 @@ import BannerApp from "../BannerTwo";
 import HeaderApp from "../Header.vue";
 import FooterApp from "../Footer.vue";
 import AboutApp from "../About.vue";
+
+import $ from "jquery";
 
 // Import component
 import Loading from "vue-loading-overlay";
@@ -44,12 +46,22 @@ export default {
     },
     onCancel() {
       console.log("User cancelled the loader.");
+    },
+    closeMenuMobile() {
+      if ($("body").hasClass("mobile-nav-active")) {
+        $("body").removeClass("mobile-nav-active");
+        $("#mobile-nav-toggle i").toggleClass("lnr-cross lnr-menu");
+        $("#mobile-body-overly").fadeOut();
+      }
     }
   },
   mounted: function() {
     this.$nextTick(function() {
       this.doAjax();
     });
+  },
+  created() {
+    this.closeMenuMobile();
   }
 };
 </script>

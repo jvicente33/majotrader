@@ -47,6 +47,7 @@ export default {
   methods: {
     contact() {
       this.$router.push({ name: "contact" });
+      window.scroll({ top: 0, left: 0 });
     },
     temary(name) {
       if (name) {
@@ -153,6 +154,11 @@ export default {
 }
 .fm-card-footer .by a:hover {
   color: dodgerblue;
+}
+
+.separar{
+  width: 10em;
+  margin: 0.3em;
 }
 </style>
 

@@ -97,12 +97,22 @@ export default {
     },
     onCancel() {
       console.log("User cancelled the loader.");
+    },
+    closeMenuMobile() {
+      if ($("body").hasClass("mobile-nav-active")) {
+        $("body").removeClass("mobile-nav-active");
+        $("#mobile-nav-toggle i").toggleClass("lnr-cross lnr-menu");
+        $("#mobile-body-overly").fadeOut();
+      }
     }
   },
   mounted: function() {
     this.$nextTick(function() {
       this.doAjax();
     });
+  },
+  created() {
+    this.closeMenuMobile();
   }
 };
 </script>

@@ -23,7 +23,7 @@ import BlogApp from "../Blog.vue";
 
 import axios from "../../config/axios.js";
 
-import ApiBlog from '../../utils/api.blog'
+import ApiBlog from "../../utils/api.blog";
 
 // Import component
 import Loading from "vue-loading-overlay";
@@ -35,7 +35,7 @@ export default {
     return {
       isLoading: true,
       fullPage: false,
-      posts: ''
+      posts: ""
     };
   },
   components: { BannerApp, HeaderApp, FooterApp, Loading, BlogApp },
@@ -60,6 +60,13 @@ export default {
         console.log(error);
         this.isLoading = false;
       }
+    },
+    closeMenuMobile() {
+      if ($("body").hasClass("mobile-nav-active")) {
+        $("body").removeClass("mobile-nav-active");
+        $("#mobile-nav-toggle i").toggleClass("lnr-cross lnr-menu");
+        $("#mobile-body-overly").fadeOut();
+      }
     }
   },
   mounted: function() {
@@ -67,8 +74,9 @@ export default {
       // this.doAjax();
     });
   },
-  created(){
-    this.getPost()
+  created() {
+    this.getPost();
+    this.closeMenuMobile();
   }
 };
 </script>

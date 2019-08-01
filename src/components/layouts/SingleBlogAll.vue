@@ -63,6 +63,13 @@ export default {
         console.log(error);
         this.isLoading = false;
       }
+    },
+    closeMenuMobile() {
+      if ($("body").hasClass("mobile-nav-active")) {
+        $("body").removeClass("mobile-nav-active");
+        $("#mobile-nav-toggle i").toggleClass("lnr-cross lnr-menu");
+        $("#mobile-body-overly").fadeOut();
+      }
     }
   },
   mounted: function() {
@@ -74,6 +81,7 @@ export default {
     window.scroll({ top: 0, left: 0 });
     this.idPost = this.$route.params.idPost;
     this.getPost(this.idPost);
+    this.closeMenuMobile();
   }
 };
 </script>
