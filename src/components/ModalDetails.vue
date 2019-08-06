@@ -10,7 +10,11 @@
         </div>
         <div class="summary">
           <p align="justify">{{data.content}}</p>
-          <h5 v-if="data.offprice != 0">Precio: <s>${{data.price/100}}</s> ${{data.offprice/100}} usd</h5>
+          <h5 v-if="data.offprice != 0">
+            Precio:
+            <s>${{data.price/100}}</s>
+            ${{data.offprice/100}} usd
+          </h5>
           <h5 v-else>Precio: ${{data.price/100}} usd</h5>
           <br />
         </div>
@@ -21,7 +25,10 @@
               :class="data.temary ? 'separar genric-btn success circle' : 'separar genric-btn dark circle'"
               @click="temary(data.temary)"
             >Temario</button>
-            <button class="separar genric-btn primary circle" @click="pay">Pagar</button>
+            <button
+              :class="data.price != 0 ? 'separar genric-btn primary circle' : 'separar genric-btn dark circle'"
+              @click="pay"
+            >Pagar</button>
           </div>
         </div>
       </div>
@@ -59,26 +66,29 @@ export default {
       }
     },
     async pay() {
-      try {
-        let data = await axios.post("/create/session", {
-          name: `Compra de Curso`,
-          title: this.data.title,
-          price: this.data.offprice == 0 ? this.data.price : this.data.offprice,
-          img: this.data.img
-        });
-        let stripe = Stripe("pk_live_f7jgBFPatS0gY6mzCWNAXH1W00irZzbJZO");
-        stripe
-          .redirectToCheckout({
-            sessionId: data.data.session.id
-          })
-          .then(function(result) {
-            if (result.error) {
-              var displayError = document.getElementById("error-message");
-              displayError.textContent = result.error.message;
-            }
+      if (this.data.price != 0) {
+        try {
+          let data = await axios.post("/create/session", {
+            name: `Compra de Curso`,
+            title: this.data.title,
+            price:
+              this.data.offprice == 0 ? this.data.price : this.data.offprice,
+            img: this.data.img
           });
-      } catch (error) {
-        console.log(error);
+          let stripe = Stripe("pk_live_f7jgBFPatS0gY6mzCWNAXH1W00irZzbJZO");
+          stripe
+            .redirectToCheckout({
+              sessionId: data.data.session.id
+            })
+            .then(function(result) {
+              if (result.error) {
+                var displayError = document.getElementById("error-message");
+                displayError.textContent = result.error.message;
+              }
+            });
+        } catch (error) {
+          console.log(error);
+        }
       }
     }
   }
@@ -88,7 +98,7 @@ export default {
 
 <style scoped>
 * {
-  transition: all 0s;
+  transition: all 1.5s;
 }
 
 .fm-card-header {
@@ -156,7 +166,7 @@ export default {
   color: dodgerblue;
 }
 
-.separar{
+.separar {
   width: 10em;
   margin: 0.3em;
 }

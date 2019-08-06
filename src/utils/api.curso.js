@@ -15,7 +15,7 @@ const data = [
         entradas de las ballenas del mercado y su flujo en tiempo real.
         (Para esta capacitación se necesita tener conocimiento previo de las Opciones Financieras)`,
         img: 'education-trading-institucional.jpg',
-        price: 100,
+        price: 60000,
         offprice: 0,
         temary: null
     },
@@ -25,7 +25,7 @@ const data = [
         nuestro sistema totalmente detallado.
         (Para esta capacitación se necesita tener conocimiento previo de las Opciones Financieras)`,
         img: 'education-venta-opciones.jpg',
-        price: 100,
+        price: 0,
         offprice: 0,
         temary: null
     }
