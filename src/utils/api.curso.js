@@ -14,7 +14,7 @@ const data = [
         content: `En esta capacitación te enseñaremos a seguir la huella institucional. A detectar las mejores
         entradas de las ballenas del mercado y su flujo en tiempo real.
         (Para esta capacitación se necesita tener conocimiento previo de las Opciones Financieras)`,
-        img: 'education-trading-institucional.jpg',
+        img: 'education-trading-institucional-2.jpg',
         price: 60000,
         offprice: 0,
         temary: null
