@@ -7,7 +7,7 @@ const data = [
         img: 'education-opciones-financieras-promo.jpg',
         price: 59000,
         offprice: 50000,
-        temary: 'curso-opciones-financieras-promo.pdf'
+        temary: 'curso-opciones-financieras.pdf'
     },
     {
         title: 'Curso de Trading Institucional Opciones',
@@ -17,7 +17,7 @@ const data = [
         img: 'education-trading-institucional-2.jpg',
         price: 60000,
         offprice: 0,
-        temary: null
+        temary: 'curso-siguiendo-huella-institucional.pdf'
     },
     {
         title: 'Curso de Ventas de Opciones',
