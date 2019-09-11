@@ -4,7 +4,7 @@ const data = [
         content: `Esta capacitación esta diseñada para brindarte las habilidades y confianza que necesitas para
         convertirte en un comerciante de las Opciones Financieras. Esta capacitación es desde cero no
         necesitas tener conocimiento previo sobre el mercado bursátil.`,
-        img: 'education-opciones-financieras-promo.jpg',
+        img: 'curso-con-descuento.jpg',
         price: 59000,
         offprice: 50000,
         temary: 'curso-opciones-financieras.pdf'
@@ -14,7 +14,7 @@ const data = [
         content: `En esta capacitación te enseñaremos a seguir la huella institucional. A detectar las mejores
         entradas de las ballenas del mercado y su flujo en tiempo real.
         (Para esta capacitación se necesita tener conocimiento previo de las Opciones Financieras)`,
-        img: 'education-trading-institucional-2.jpg',
+        img: 'siguiendo-la-huella-opciones-financieras.jpg',
         price: 60000,
         offprice: 0,
         temary: 'curso-siguiendo-huella-institucional.pdf'
@@ -24,7 +24,7 @@ const data = [
         content: `Aprenderás como sacar una mayor rentabilidad de tu capital, gracias a las ventas de opciones, con
         nuestro sistema totalmente detallado.
         (Para esta capacitación se necesita tener conocimiento previo de las Opciones Financieras)`,
-        img: 'education-venta-opciones.jpg',
+        img: 'curso-opciones-venta.jpg',
         price: 0,
         offprice: 0,
         temary: null

@@ -1,7 +1,7 @@
 <template>
   <div>
     <header-app></header-app>
-    <banner-app :title="posts.title"></banner-app>
+    <banner-app :title="posts.title.toUpperCase()" type="blog"></banner-app>
     <single-blog-app :post="posts"></single-blog-app>
     <footer-app></footer-app>
     <loading

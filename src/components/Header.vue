@@ -44,7 +44,7 @@
               <a @click="toGo('/about')" id="about" style="cursor: pointer">Sobre mí</a>
             </li>
             <li>
-              <a @click="toGo('/education')" id="education" style="cursor: pointer">Educación</a>
+              <a @click="toGo('/education')" id="education" style="cursor: pointer">Capacitación</a>
             </li>
             <li>
               <a @click="toGo('/services')" id="services" style="cursor: pointer">Servicios</a>
@@ -110,6 +110,6 @@ export default {
 
 <style scoped>
 #logo {
-  width: 3rem;
+  width: 3.5rem;
 }
 </style>

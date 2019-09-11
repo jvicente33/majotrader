@@ -1,7 +1,7 @@
 <template>
   <div>
     <header-app></header-app>
-    <banner-app title="Blog"></banner-app>
+    <banner-app title="BLOG" type="blog"></banner-app>
     <blog-app :posts="posts"></blog-app>
     <footer-app></footer-app>
     <loading

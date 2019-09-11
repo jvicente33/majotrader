@@ -1,7 +1,7 @@
 <template>
   <div>
     <header-app></header-app>
-    <banner-app title="Educación"></banner-app>
+    <banner-app title="CAPACITACIÓN" :type="'education'"></banner-app>
     <education-app :showTitle="false" :showSubtitle="false" :limit="10"></education-app>
     <footer-app></footer-app>
     <!-- <loading

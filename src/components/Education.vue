@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-12 pb-30 header-text text-center">
-          <h1 class="mb-10" v-if="showTitle">{{title}}</h1>
+          <h1 class="mb-10 text-color" v-if="showTitle">{{title}}</h1>
           <p v-if="showSubtitle">{{subtitle}}</p>
         </div>
       </div>
@@ -69,5 +69,11 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.text-color{
+  color: #01d88a;
+}
+</style>
 
 

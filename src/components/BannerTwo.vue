@@ -1,5 +1,5 @@
 <template>
-    <section class="banner-area relative">	
+    <section :class="`banner-area-${type} relative`">	
         <div class="overlay overlay-bg"></div>
         <div class="container">				
             <div class="row d-flex align-items-center justify-content-center">
@@ -16,7 +16,7 @@
 
 <script>
 export default {
-    props: ['title']
+    props: ['title', 'type']
 }
 </script>
 

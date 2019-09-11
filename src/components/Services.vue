@@ -4,14 +4,14 @@
       <div class="row justify-content-center">
         <div class="col-md-12 pb-30 header-text text-center">
           <!-- <h1 class="mb-10">Servicios</h1> -->
-          <h3>Te preparamos para invertir en el mejor mercado.</h3>
+          <h3 class="text-color">Te preparamos para invertir en el mejor mercado.</h3>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-6">
           <div class="single-service" @click="toGo('/contact')">
             <div class="thumb">
-              <img src="img/service-tutorias-linea.jpg" alt height="300">
+              <img src="img/tutorias-en-linea.jpg" alt height="300">
             </div>
             <!-- <h4>Tutorias en Linea</h4> -->
             <p class="margin-top" align="justify">
@@ -23,7 +23,7 @@
         <div class="col-lg-6">
           <div class="single-service" @click="toGo('/contact')">
             <div class="thumb">
-              <img src="img/service-flujo-tiempo-real.jpg" alt height="300">
+              <img src="img/flujo-de-opciones-en-tiempo-real.jpg" alt height="300">
             </div>
             <!-- <h4>Flujo de Opciones en Tiempo Real (Proximamente)</h4> -->
             <p class="margin-top" align="justify">
@@ -48,5 +48,11 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.text-color{
+  color: #01d88a;
+}
+</style>
 
 

@@ -4,13 +4,13 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-12 pb-30 header-text text-center">
-          <h1 class="mb-10 text-white">Testimonios de clientes</h1>
+          <h1 class="mb-10 text-gray">TESTIMONIOS DE CLIENTES</h1>
           <p
-            class="text-white"
+            class="text-gray"
           >Calidad de servicio no es lo que tú das. Es lo que el cliente recibe.</p>
         </div>
       </div>
-      <div class="row feedback-contents justify-content-center align-items-center">
+      <div class="row feedback-contents justify-content-center align-items-center rectangulo">
         <div class="col-lg-8 feedback-right">
           <carousel :autoplay="true" :perPage="1">
             <!-- <div class="active-review-carusel"> -->
@@ -71,3 +71,17 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.rectangulo{
+  /* background-color: #66a6ff; */
+  background: linear-gradient(to right,#48c6ef, #6f86d6);
+  opacity: 0.7;
+  border-radius: 2em;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+.text-gray{
+  color: #636363;
+}
+</style>

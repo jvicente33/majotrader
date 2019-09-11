@@ -7,7 +7,7 @@
             <p class="text-white maxx-text">PRE-MARKET</p>
             <h1 class="text-white max-text">NEWS</h1>
           </div>
-          <p class="text-white text-news min-text" align="justify">
+          <p class="text-white text-news min-text rectangulo" align="justify">
             <!-- <a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="contact.html"> Contact Us</a> -->
             Es una sesión informativa que comparto con ustedes en las
             historias de Instragram y facebook, para todos los que
@@ -61,6 +61,14 @@
   .max-text {
     font-size: 6em;
   }
+}
+
+.rectangulo{
+  /* background-color: #66a6ff; */
+  background: linear-gradient(to right,#67b26f, #4ca2cd);
+  opacity: 0.7;
+  border-radius: 2em;
+  padding: 3em;
 }
 </style>
 

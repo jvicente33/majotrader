@@ -1,7 +1,7 @@
 <template>
   <div>
     <header-app></header-app>
-    <banner-app title="Contacto"></banner-app>
+    <banner-app title="CONTACTO" type="contact"></banner-app>
     <contact-app></contact-app>
     <footer-app></footer-app>
     <!-- <loading
