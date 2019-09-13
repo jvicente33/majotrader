@@ -6,6 +6,8 @@
     <!-- Start banner Area -->
     <banner-one-app></banner-one-app>
 
+    <tutors-app></tutors-app>
+
     <!-- Tips -->
     <!-- Start About -->
     <tips-app></tips-app>
@@ -59,6 +61,7 @@ import ProjectsFinishApp from "../ProjectsFinish.vue";
 import TestimoniesApp from "../Testimonies.vue";
 import EducationApp from "../Education.vue";
 import NewsApp from "../News.vue";
+import TutorsApp from "../Tutors.vue";
 
 // Import component
 import Loading from "vue-loading-overlay";
@@ -85,7 +88,8 @@ export default {
     TestimoniesApp,
     Loading,
     EducationApp,
-    NewsApp
+    NewsApp,
+    TutorsApp
   },
   methods: {
     doAjax() {

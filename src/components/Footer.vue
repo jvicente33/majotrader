@@ -25,7 +25,7 @@
           <strong>TRADERS PLANET LLC</strong> no es una empresa de inversiones, no hace captación de dinero del público y
           no hace recomendaciones de inversión.
           Toda la información proporcionada por
-          <strong>Majotrader</strong> y por
+          <strong>Majotplanet</strong> y por
           <strong>TRADERS PLANET LLC</strong>,
           es solo para fines de
           entretenimiento y educativos y no debe ser percibida, considerada, asumida o utilizada en
@@ -37,16 +37,16 @@
               <p class="center">GARANTÍA</p>
             </strong>
           </strong>
-          <strong>Majotrader</strong> y
+          <strong>Majotplanet</strong> y
           <strong>TRADERS PLANET LLC</strong> no serán responsables bajo ninguna circunstancia de cualquier pérdida
           potencial y/o real de capital o daños financieros o de cualquier otra naturaleza.
           El rendimiento pasado no es indicativo de resultados futuros.
-          <strong>Majotrader</strong> y
+          <strong>Majotplanet</strong> y
           <strong>TRADERS PLANET LLC</strong> no
           garantizan ningún resultado o beneficio específico. Debe tener en cuenta el riesgo real de pérdida al
           seguir cualquier opinión, críticas, notas, blogs o contenidos en cualquier otra forma, como imágenes y videos,
           que se discuten en este sitio web y en los otros servicios proporcionados por
-          <strong>Majotrader</strong>.
+          <strong>Majotplanet</strong>.
           <br />
           <br />*** CFTC REGLA 4.41 - RESULTADOS DE RENDIMIENTO hipotéticos o simulados tienen ciertas
           limitaciones. A DIFERENCIA DE UN REGISTRO DE RENDIMIENTO REAL, los resultados simulados no

@@ -28,7 +28,7 @@
           </div>
         </div>
       </div>
-      <div class="box-part" id="bp-right">
+      <div class="box-part" id="bp-right" :style="cssImage">
         <div class="box-messages"></div>
       </div>
     </div>
@@ -42,6 +42,7 @@ export default {
   data() {
     return {
       modalWidth: MODAL_WIDTH,
+      cssImage: `background: url('img/cargar-testimonio.jpg') no-repeat top left;`,
       testimony: {
         name: "",
         content: ""
@@ -88,7 +89,6 @@ $facebook_color: #03d88d;
     width: 50%;
 
     &#bp-right {
-      background: url("../assets/cargar-testimonio.jpg") no-repeat top left;
       border-left: 1px solid #eee;
     }
   }

@@ -41,7 +41,7 @@
               <a @click="toGo('/')" id="home" style="cursor: pointer">Inicio</a>
             </li>
             <li>
-              <a @click="toGo('/about')" id="about" style="cursor: pointer">Sobre mí</a>
+              <a @click="toGo('/about')" id="about" style="cursor: pointer">Acerca de</a>
             </li>
             <li>
               <a @click="toGo('/education')" id="education" style="cursor: pointer">Capacitación</a>

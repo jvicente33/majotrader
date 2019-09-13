@@ -2294,6 +2294,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 120px 0;
 }
 
+.section-gap-tutors {
+  padding: 60px 60px;
+  background: linear-gradient(to bottom,#a1ffce, #faffd1);
+  /* opacity: 0.8; */
+}
+
 .section-gap-testimonio {
   padding: 120px 0;
 }
@@ -2419,7 +2425,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .banner-news {
   /* padding-top: 50px; */
-  background: url(../img/sobre-mi.jpg) center;
+  background: url(../img/fondo-news-original.jpg) center;
   background-size: cover;
 }
 .banner-landing {
