@@ -3,18 +3,36 @@
     <div class="container">
       <div class="row justify-content-center align-items-center">
         <div class="col-lg-8 col-md-12 home-about-left">
-          <h1>MISIÓN</h1>
+          <h1>Misión</h1>
           <p class="pb-20 textt" align="justify">
-            OFRECER CURSOS TEORICOS Y PRACTICOS PARA PREPARAR A NUESTROS CLIENTES COMO VERDADEROS COMERCIANTES DEL MERCADO BURSATIL DE OPCIONES FINANCIERAS. NUESTROS CURSOS PUEDEN SER TANTO PRESENCIALES, COMO A DISTANCIA (ONLINE)
-            LA BOLSA DE VALORES DEBE DEJAR DE SER LA INSTITUCION CASI DESCONOCIDA, MISTERIOSA, QUE FUNCIONA CON UN LENGUAJE Y UNA TERMINOLOGIA QUE SOLAMENTE ES COMPRENDIDA POR LOS QUE ESTAN DENTRO DE ESE MUNDO. TRADERSPLANET ABRIRA LAS PUERTAS DE ESTE EMOCIONANTE MERCADO DE CAPITALES FINANCIEROS AL OFRECER TECNICAS PARA EVALUAR Y ANALIZAR LOS PRECIOS DE VALORES E INDICADORES BURSATILES, A LOS AHORRISTAS QUE CON UNA PREVIA INSTRUCCIÓN EN ADMINISTRACION DEL RIESGO, DESEEN INVERTIR SU DINERO A CAMBIO DE LOGRAR UNA RENTABILIDAD EXTRA A CORTO Y MEDIANO PLAZO.
-            LA EXPERIENCIA Y EL FEEDBACK O RETROALIMENTACION CON NUESTROS ALUMNOS, ADEMAS DEL LENGUAJE CLARO Y SENCILLO QUE USAN EN LOS CURSOS Y ASESORIAS, SON LA CLAVE DE LA MISION Y EL LIDERAZGO EN EL SECTOR EDUCATIVO DEL TRADER.
+            Ofrecer cursos teóricos y prácticos para preparar a nuestros clientes como verdaderos
+            comerciantes del mercado bursátil de opciones financieras. Nuestros cursos pueden
+            ser tanto presenciales, como a distancia (online) la bolsa de valores debe dejar de ser
+            la institución casi desconocida, misteriosa, que funciona con un lenguaje y una
+            terminología que solamente es comprendida por los que están dentro de ese mundo.
+            Traders Planet abrirá las puertas de este emocionante mercado de capitales
+            financieros al ofrecer técnicas para evaluar y analizar los precios de valores e
+            indicadores bursátiles, a los ahorristas que con una previa instrucción en
+            administración del riesgo, deseen invertir su dinero a cambio de lograr una rentabilidad
+            extra a corto y mediano plazo. La experiencia y el feedback o retroalimentación con
+            nuestros alumnos, además del lenguaje claro y sencillo que usan en los cursos y
+            asesorías, son la clave de la misión y el liderazgo en el sector educativo del trader.
           </p>
-          <h1>VISIÓN</h1>
+          <h1>Visión</h1>
           <p class="pb-20 textt" align="justify">
-            TENER UN CRECIMIENTO SOSTENIDO COMO EMPRESA DE INSTRUCCIÓN Y ASESORIA EN EL MERCADO DE LAS OPCIONES FINANCIERAS Y LOGRAR QUE NUESTROS CLIENTES SE SIENTAN CONTENTOS CON LA PREPARACION QUE LES BRINDAMOS.
-            TRADERSPLANET TIENE UN MERCADO OBJETIVO TAN AMPLIO, QUE CADA MIEMBRO DE LA COMUNIDAD LATINOAMERICANA PODRIAN SER EN POTENCIA, FUTUROS COMERCIANTES DEL MERCADO BURSATIL, Y AUN MAS, LA EMPRESA PRETENDE INCURSIONAR CON NUESTROS PROGRAMAS EN EL MERCADO AMERICANO ANGLOSAJON.
-            CUALQUIER HOMBRE O MUJER QUE QUIERA DIVERSIFICAR SUS FUENTES DE INGRESOS Y TENER MAYOR ESTABILIDAD FINANCIERA, ADEMAS DE PERSEGUIR EL ÉXITO Y COMPARTIR MAYOR TIEMPO CON SU FAMILIA, SERA BIENVENIDO EN LA FAMILIA TRADERSPLANET, DONDE SERA GUIADO Y APRENDERA LAS MEJORES ESTRATEGIAS COMERCIALES PARA LOGRARLO.
-            LA INTEGRIDAD EN NUESTRAS ACCIONES, LA PASION CON QUE NOS COMPROMETEMOS EN TU ENSEÑANZA, LA RESPONSABILIDAD EN LA PREPARACION DE LOS CURSOS Y LA CALIDAD EN BUSCA DE LA EXCELENCIA. SON LOS VALORES QUE NOS GUIAN PARA EL LOGRO DE NUESTROS OBJETIVOS.
+            Tener un crecimiento sostenido como empresa de instrucción y asesoría en el
+            mercado de las opciones financieras y lograr que nuestros clientes se sientan
+            contentos con la preparación que les brindamos. Traders Planet tiene un mercado
+            objetivo tan amplio, que cada miembro de la comunidad latinoamericana podrían ser
+            en potencia, futuros comerciantes del mercado bursátil, y aun mas, la empresa
+            pretende incursionar con nuestros programas en el mercado americano anglosajón.
+            Cualquier hombre o mujer que quiera diversificar sus fuentes de ingresos y tener
+            mayor estabilidad financiera, además de perseguir el éxito y compartir mayor tiempo
+            con su familia, será bienvenido en la familia traders planet, donde será guiado y
+            aprenderá las mejores estrategias comerciales para lograrlo. La integridad en nuestras
+            acciones, la pasión con que nos comprometemos en tu enseñanza, la responsabilidad
+            en la preparación de los cursos y la calidad en busca de la excelencia. Son los valores
+            que nos guían para el logro de nuestros objetivos.
           </p>
           <!-- <p class="pb-20 textt" align="justify">
             He estado desde el 2015 en el Stock Market y el Mercado de Opciones. Aquello que
@@ -32,15 +50,15 @@
             con la finalidad de educar a todo aquella persona que quiera incursionar en este
             mundo bursátil.
           </p>-->
-          <p class="sub">
-            <strong>TRADERS PLANET LLC</strong>
-          </p>
+          <!-- <p class="sub">
+            <strong>Traders planet llc</strong>
+          </p> -->
         </div>
         <div class="col-lg-4 col-md-12 relative">
           <div class="single-widget protfolio-widget">
             <img id="img-majo" src="img/logo.png" alt />
             <a>
-              <h4>TRADER PLANET LLC</h4>
+              <h4>Traders planet llc</h4>
             </a>
             <!-- <p>...</p> -->
             <ul>

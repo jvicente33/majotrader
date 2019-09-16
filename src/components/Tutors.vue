@@ -19,7 +19,7 @@
                 style="cursor: pointer;"
                 @click="$modal.show('demo-tutor')"
               />
-              <img src="img/tutors/foto_mari_cort_blanco.png" class="img-tip tutor-profile" />
+              <!-- <img src="img/tutors/foto_mari_cort_blanco.png" class="img-tip tutor-profile" /> -->
             </a>
             <!-- <h4 class="mt-40 mb-20 text-gray">Conviértete en un Trader</h4>
             <p align="justify">
@@ -68,17 +68,17 @@ export default {
 
 @keyframes animar {
   from {
-    transform: scale(0.9);
+    transform: scale(0.6);
   }
   to {
-    transform: scale(1.3);
+    transform: scale(1);
   }
 }
 
 .tutor-profile {
   animation-duration: 5s;
   animation-name: animar;
-  animation-iteration-count: infinite;
+  animation-iteration-count: initial;
   animation-timing-function: ease;
   animation-direction: alternate;
 }

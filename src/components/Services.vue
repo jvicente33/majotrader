@@ -51,7 +51,7 @@ export default {
 
 <style scoped>
 .text-color{
-  color: #01d88a;
+  color: #636363;
 }
 </style>
 

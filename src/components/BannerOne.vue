@@ -15,6 +15,8 @@
               <br />cuánto ganas cuando tienes razón y cuánto pierdes cuando estás equivocado".
             </small>
             <br />
+            <br>
+            
             <strong>George Soros</strong>
           </p>
           <!--<a href="#" class="primary-btn header-btn text-uppercase">Get Started</a>-->

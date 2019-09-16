@@ -3,12 +3,13 @@
     <div class="box">
       <div class="box-part" id="bp-left">
         <div class="partition" id="partition-register">
-          <div class="partition-title">MARIA MANRIQUE</div>
+          <div class="partition-title">María Manrique</div>
           <p class="partition-text">
-            Comencé principalmente con el mercado de acciones, pero
-            luego las opciones conquistaron mi corazón y si bien soy una comerciante de swing
-            por naturaleza también realizo transacciones diarias, dependiendo de las condiciones
-            del mercado.
+            María José es un comerciante de Opciones Financieras y Stocks a tiempo completo. Es
+            mentor y fundadora de Traders Planet. Su estilo de negociación está profundamente
+            arraigado al análisis técnico y a seguir el flujo de las opciones institucionales. Es una
+            comerciante de swing trading por naturaleza, pero también realiza day trading
+            dependiendo de las condiciones del mercado.
           </p>
         </div>
       </div>
