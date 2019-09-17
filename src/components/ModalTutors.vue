@@ -3,7 +3,7 @@
     <div class="box">
       <div class="box-part" id="bp-left">
         <div class="partition" id="partition-register">
-          <div class="partition-title">María Manrique</div>
+          <div class="partition-title">María José Manrique</div>
           <p class="partition-text">
             María José es un comerciante de Opciones Financieras y Stocks a tiempo completo. Es
             mentor y fundadora de Traders Planet. Su estilo de negociación está profundamente

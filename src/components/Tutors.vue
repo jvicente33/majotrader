@@ -37,7 +37,6 @@
         </div>-->
       </div>
     </div>
-    
   </section>
 </template>
 
@@ -75,17 +74,71 @@ export default {
   }
 }
 
-.tutor-profile {
+/* .tutor-profile {
   animation-duration: 5s;
   animation-name: animar;
   animation-iteration-count: initial;
   animation-timing-function: ease;
   animation-direction: alternate;
-}
+} */
 
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+* {
+  transition: all 1.5s;
+}
+
+.tutor-profile:hover {
+  transform: scale(1.2);
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .img-tip {
+    width: 20%;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 0px solid #000000;
+    margin: 0 3em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .img-tip {
+    width: 25%;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 0px solid #000000;
+    margin: 0 3em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .img-tip {
+    width: 40%;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 0px solid #000000;
+    margin: 0 3em;
+  }
+}
+
+@media screen and (max-width: 328px) {
+  .img-tip {
+    width: 60%;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 0px solid #000000;
+    margin: 0 3em;
+  }
 }
 </style>

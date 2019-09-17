@@ -20,13 +20,13 @@
         </div>
         <div class="col-lg-4 sidebar">
           <div class="single-widget protfolio-widget">
-            <img id="img-majo" src="img/majo.png" alt />
+            <img id="img-majo" src="img/logo.png" alt />
             <a>
-              <h4>Maria Manrique</h4>
+              <h4>Traders planet llc</h4>
             </a>
-            <p
+            <!-- <p
               align="justify"
-            >Hola, mi nombre es Maria Jose. Estaré aquí para apoyarte en lo que necesites, si te gusta la adrenalina, este trabajo es para ti.</p>
+            >Hola, mi nombre es Maria Jose. Estaré aquí para apoyarte en lo que necesites, si te gusta la adrenalina, este trabajo es para ti.</p> -->
             <ul>
               <li>
                 <a href="https://www.facebook.com/tradersplanet" target="_blank">
