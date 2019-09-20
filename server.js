@@ -10,6 +10,9 @@ app.use(express.json())
 //Static
 app.use(express.static(__dirname + '/dist/'))
 
+//DB
+require('./src/server/config/db')
+
 //Router
 app.use('/', router)
 

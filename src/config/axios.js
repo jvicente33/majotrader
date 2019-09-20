@@ -8,7 +8,8 @@ NProgress.configure({ minimum: 0.3 });
 //urlchange
 // const url = 'http://localhost:8020';
 // const url = 'https://tradersplanet-panel.herokuapp.com';
-const url = 'https://tradersplanet.us';
+// const url = 'https://tradersplanet.us';
+const url = process.env.VUE_APP_API_URL;
 
 // create a new axios instance
 const instance = axios.create({

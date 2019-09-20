@@ -5,9 +5,7 @@
       <div class="row justify-content-center">
         <div class="col-md-12 pb-30 header-text text-center">
           <h1 class="mb-10 text-gray">TESTIMONIOS DE CLIENTES</h1>
-          <p
-            class="text-gray"
-          >Calidad de servicio no es lo que tú das. Es lo que el cliente recibe.</p>
+          <p class="text-gray">Calidad de servicio no es lo que tú das. Es lo que el cliente recibe.</p>
         </div>
       </div>
       <div class="row feedback-contents justify-content-center align-items-center rectangulo">
@@ -19,7 +17,7 @@
                 <div class="title d-flex flex-row">
                   <h4 class="text-white pb-10">{{item.name}}</h4>
                 </div>
-                <p class="text-white" align="justify">{{item.content}}</p>
+                <p class="text-white box-text" align="justify">{{item.content}}</p>
               </div>
             </slide>
             <!-- </div> -->
@@ -31,10 +29,12 @@
 </template>
 
 <script>
+import axios from "../config/axios";
 export default {
   data() {
     return {
-      data: [
+      data: [],
+      data2: [
         {
           name: "Natalie Smart",
           content:
@@ -65,23 +65,41 @@ export default {
   },
   created() {
     this.$forceUpdate();
+    this.getListTestimonies();
+    this.$bus.on("refresh-testimonies", data => {
+      if (data) this.getListTestimonies();
+    });
   },
   mounted() {
     this.$forceUpdate();
+  },
+  methods: {
+    async getListTestimonies() {
+      try {
+        let list = await axios.get("/testimony/list");
+        this.data = list.data.data;
+      } catch (error) {
+        console.log(error);
+      }
+    }
   }
 };
 </script>
 
 <style scoped>
-.rectangulo{
+.rectangulo {
   /* background-color: #66a6ff; */
-  background: linear-gradient(to right,#48c6ef, #6f86d6);
+  background: linear-gradient(to right, #48c6ef, #6f86d6);
   opacity: 0.7;
   border-radius: 2em;
   padding-top: 3em;
   padding-bottom: 3em;
+  font-size: 1.2em;
 }
-.text-gray{
+.text-gray {
   color: #636363;
 }
+/* .box-text{
+  width: 20%;
+} */
 </style>

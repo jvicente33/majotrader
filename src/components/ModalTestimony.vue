@@ -10,21 +10,33 @@
                 <input type="password" />
               </div>
 
-              <input type="text" v-model="testimony.name" placeholder="Escriba su nombre" />
+              <input type="text" v-model="testimony.name" placeholder="Escriba su nombre completo" />
               <textarea
                 cols="30"
                 rows="5"
                 v-model="testimony.content"
                 placeholder="Escriba su testimonio"
+                :maxlength="max"
+                :minlength="min"
               ></textarea>
+              <div
+                class="partition-title-min"
+              >{{(testimony.content.length > min) ? (max - testimony.content.length) : (min - testimony.content.length)}} | Max: {{max}}</div>
+              <div class="partition-title-min"></div>
+              <p style="color: black;"></p>
             </form>
 
             <div style="margin-top: 10px"></div>
 
-            <button class="large-btn facebook-btn">
+            <button
+              class="large-btn facebook-btn"
+              @click="saveTestimony()"
+              v-if="testimony.content.length > min"
+            >
               Enviar
               <span>Testimonio</span>
             </button>
+            <div class="partition-title-text">{{message}}</div>
           </div>
         </div>
       </div>
@@ -35,6 +47,8 @@
   </modal>
 </template>
 <script>
+import axios from "../config/axios";
+
 const MODAL_WIDTH = 656;
 
 export default {
@@ -45,8 +59,12 @@ export default {
       cssImage: `background: url('img/cargar-testimonio.jpg') no-repeat top left;`,
       testimony: {
         name: "",
-        content: ""
-      }
+        content: "",
+        active: true
+      },
+      max: 400,
+      min: 150,
+      message: ""
     };
   },
   created() {
@@ -56,8 +74,21 @@ export default {
   methods: {
     async saveTestimony() {
       try {
+        await axios.post("/testimony/create", this.testimony);
+        this.message = "Testimonio enviado con éxito.";
+        setInterval(() => {
+          this.message = "";
+        }, 2000);
+        this.$bus.emit("refresh-testimonies", true);
+        this.testimony.name = "";
+        this.testimony.content = "";
       } catch (error) {
         console.log(error);
+        this.message =
+          "Hubo un error al enviar tu testimonio, intenta de nuevo.";
+        setInterval(() => {
+          this.message = "";
+        }, 2000);
       }
     }
   }
@@ -76,7 +107,7 @@ $facebook_color: #03d88d;
   border-radius: 2px;
   box-sizing: border-box;
   box-shadow: 0 0 40px black;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #4f4f4f;
   font-size: 0;
 
@@ -128,6 +159,22 @@ $facebook_color: #03d88d;
       font-size: 20px;
       font-weight: 300;
     }
+    .partition-title-min {
+      box-sizing: border-box;
+      width: 100%;
+      text-align: center;
+      letter-spacing: 1px;
+      font-size: 10px;
+      font-weight: 300;
+    }
+    .partition-title-text {
+      box-sizing: border-box;
+      width: 100%;
+      text-align: center;
+      letter-spacing: 1px;
+      font-size: 13px;
+      font-weight: 300;
+    }
 
     .partition-form {
       padding: 0 20px;
@@ -146,7 +193,7 @@ $facebook_color: #03d88d;
     border: 0;
     border-bottom: 1px solid #03d88d;
     padding: 4px 8px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     transition: 0.5s all;
     outline: none;
   }
@@ -161,7 +208,7 @@ $facebook_color: #03d88d;
     border: 0;
     border-bottom: 1px solid #03d88d;
     padding: 4px 8px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     transition: 0.5s all;
     outline: none;
   }

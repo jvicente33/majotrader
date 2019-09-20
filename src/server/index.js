@@ -13,6 +13,9 @@ const fsp = require('promise-fs')
 const nodemailer = require('./nodemailer')
 const payment = require('./payment')
 
+//Controladores
+const testimonyCtrl = require('./controllers/testimony-ctrl')
+
 //Email
 router.post('/send/contact', async (req, res) => {
   try {
@@ -76,5 +79,9 @@ router.get('/view/img/:name', async (req, res) => {
 
 //Payment
 router.post('/create/session', payment.createSession)
+
+//Testimonios
+router.post('/testimony/create', testimonyCtrl.create)
+router.get('/testimony/list', testimonyCtrl.list)
 
 module.exports = router
