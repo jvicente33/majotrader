@@ -22,7 +22,7 @@
 
     <!-- Start service Area -->
     <services-app :showTitle="true" title="SERVICIOS" :showSubtitle="false"></services-app>
-    <education-app :title="'CAPACITACIÓN'" :showTitle="true" :showSubtitle="false" :limit="3" size="6"></education-app>
+    <education-app :title="'CAPACITACIÓN'" :showTitle="true" :showSubtitle="false" :limit="2" size="6"></education-app>
 
     <!-- Start Testimonies -->
     <testimonies-app></testimonies-app>
