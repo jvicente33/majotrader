@@ -3,8 +3,8 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-12 pb-30 header-text text-center">
-          <!-- <h1 class="mb-10">Servicios</h1> -->
-          <h3 class="text-color">Te preparamos para invertir en el mejor mercado.</h3>
+          <h1 class="mb-10 text-color" v-if="showTitle">{{title}}</h1>
+          <h3 class="text-color" v-if="showSubtitle">Te preparamos para invertir en el mejor mercado.</h3>
         </div>
       </div>
       <div class="row">
@@ -40,6 +40,7 @@
 
 <script>
 export default {
+  props: ["showTitle", "title", "showSubtitle"],
   methods: {
     toGo(ruta) {
       window.scroll({ top: 0, left: 0 });

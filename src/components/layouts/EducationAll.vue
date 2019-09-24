@@ -2,7 +2,7 @@
   <div>
     <header-app></header-app>
     <banner-app title="CAPACITACIÓN" :type="'education'"></banner-app>
-    <education-app :showTitle="false" :showSubtitle="false" :limit="10"></education-app>
+    <education-app :showTitle="false" :showSubtitle="false" :limit="10" size="6"></education-app>
     <footer-app></footer-app>
     <!-- <loading
       :active.sync="isLoading"

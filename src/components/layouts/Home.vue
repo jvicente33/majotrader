@@ -21,8 +21,8 @@
     <!-- <projects-completed-app></projects-completed-app> -->
 
     <!-- Start service Area -->
-    <!-- <services-app></services-app> -->
-    <education-app :title="'CAPACITACIÓN'" :showTitle="true" :showSubtitle="false" :limit="2"></education-app>
+    <services-app :showTitle="true" title="SERVICIOS" :showSubtitle="false"></services-app>
+    <education-app :title="'CAPACITACIÓN'" :showTitle="true" :showSubtitle="false" :limit="3" size="6"></education-app>
 
     <!-- Start Testimonies -->
     <testimonies-app></testimonies-app>

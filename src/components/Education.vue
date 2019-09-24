@@ -8,7 +8,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-6" v-for="(curse, index) in cursos" :key="index">
+        <div :class="`col-lg-${size}`" v-for="(curse, index) in cursos" :key="index">
           <div class="single-service" @click="showDetails(curse)">
             <div class="thumb">
               <img :src="'img/' + curse.img" alt height="300" />
@@ -34,21 +34,21 @@ export default {
     };
   },
   created() {
-    this.dataLimit()
+    this.dataLimit();
   },
-  props: ["showTitle", "showSubtitle", "title", "subtitle", "limit"],
+  props: ["showTitle", "showSubtitle", "title", "subtitle", "limit", "size"],
   methods: {
     toGo(ruta) {
       window.scroll({ top: 0, left: 0 });
       this.$router.push({ path: ruta });
     },
-    dataLimit(){
-      if(this.limit <= 2){
-        for(let i = 0; i < this.limit; i++){
-          this.cursos.push(this.data[i])
+    dataLimit() {
+      if (this.limit <= 2) {
+        for (let i = 0; i < this.limit; i++) {
+          this.cursos.push(this.data[i]);
         }
-      }else{
-        this.cursos = this.data
+      } else {
+        this.cursos = this.data;
       }
     },
     showDetails(data) {
@@ -62,7 +62,7 @@ export default {
           width: 450,
           height: 600,
           adaptive: true,
-          overlayTransition: 'overlay'
+          overlayTransition: "overlay"
         }
       );
     }
@@ -71,7 +71,7 @@ export default {
 </script>
 
 <style scoped>
-.text-color{
+.text-color {
   color: #636363;
 }
 </style>

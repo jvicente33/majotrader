@@ -63,7 +63,7 @@ export default {
         active: true
       },
       max: 400,
-      min: 150,
+      min: 80,
       message: ""
     };
   },
