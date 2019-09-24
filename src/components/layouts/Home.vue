@@ -21,8 +21,9 @@
     <!-- <projects-completed-app></projects-completed-app> -->
 
     <!-- Start service Area -->
-    <services-app :showTitle="true" title="SERVICIOS" :showSubtitle="false"></services-app>
-    <education-app :title="'CAPACITACIÓN'" :showTitle="true" :showSubtitle="false" :limit="2" size="6"></education-app>
+    <!-- <services-app :showTitle="true" title="SERVICIOS" :showSubtitle="false"></services-app> -->
+    <!-- <education-app :title="'CAPACITACIÓN'" :showTitle="true" :showSubtitle="false" :limit="2" size="6"></education-app> -->
+    <featured-app :showTitle="false" :showSubtitle="false" :limit="3" size="4"></featured-app>
 
     <!-- Start Testimonies -->
     <testimonies-app></testimonies-app>
@@ -62,6 +63,7 @@ import TestimoniesApp from "../Testimonies.vue";
 import EducationApp from "../Education.vue";
 import NewsApp from "../News.vue";
 import TutorsApp from "../Tutors.vue";
+import FeaturedApp from "../Featured.vue";
 
 // Import component
 import Loading from "vue-loading-overlay";
@@ -89,7 +91,8 @@ export default {
     Loading,
     EducationApp,
     NewsApp,
-    TutorsApp
+    TutorsApp,
+    FeaturedApp
   },
   methods: {
     doAjax() {
