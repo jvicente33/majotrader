@@ -17,7 +17,11 @@
                 <div class="title d-flex flex-row">
                   <h4 class="text-white pb-10">{{item.name}}</h4>
                 </div>
-                <p class="text-white box-text" align="justify">{{item.content}}</p>
+                <p class="text-white box-text" align="justify">
+                  <span class="comillas">"</span>
+                  {{item.content}}
+                  <span class="comillas">"</span>
+                </p>
               </div>
             </slide>
             <!-- </div> -->
@@ -98,6 +102,10 @@ export default {
 }
 .text-gray {
   color: #636363;
+}
+.comillas {
+  font-size: 2em;
+  font-style: italic;
 }
 /* .box-text{
   width: 20%;
