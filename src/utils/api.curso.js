@@ -5,7 +5,7 @@ const data = [
         convertirte en un comerciante de las Opciones Financieras. Esta capacitación es desde cero no
         necesitas tener conocimiento previo sobre el mercado bursátil.`,
         img: 'curso-opciones-financieras.jpg',
-        price: 58000,
+        price: 59000,
         offprice: 0,
         temary: 'curso-opciones-financieras.pdf'
     },
