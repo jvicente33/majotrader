@@ -150,6 +150,9 @@
               <a href="https://www.instagram.com/majotplanet/" target="_blank">
                 <i class="fa fa-instagram max-icon"></i>
               </a>
+              <a href="https://api.whatsapp.com/send?phone=17863266711" target="_blank">
+                <i class="fa fa-whatsapp max-icon"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -193,7 +196,7 @@ export default {
   width: 40%;
 }
 
-.max-icon{
+.max-icon {
   font-size: 2em;
 }
 </style>

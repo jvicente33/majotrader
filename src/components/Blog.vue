@@ -53,6 +53,11 @@
                   <i class="fa fa-instagram"></i>
                 </a>
               </li>
+              <li>
+                <a href="https://api.whatsapp.com/send?phone=17863266711" target="_blank">
+                  <i class="fa fa-whatsapp"></i>
+                </a>
+              </li>
             </ul>
           </div>
 
