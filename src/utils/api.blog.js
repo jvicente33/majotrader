@@ -412,20 +412,13 @@ let data = [
   {
     _id: 9,
     title: 'Primero debes creer',
-    contentText: `La mayoría de los sistemas funcionan mejor si se mantienen simples, pero la mayoría de los
-    traders piensan inicialmente que al hacer su sistema cada vez más complicado están dando
-    unos pasos más grandes para mejorar su trading.
-    Haciendo que el análisis sea más confuso y difícil, lo cual a la hora de tomar una decisión en
-    el trading lo hace un proceso más estresante y complicado. 
+    contentText: `Y hoy vamos a tocar un tema que quizás te has preguntado en algún momento, ya
+    que últimamente  en las redes sociales hay un montón de personas enseñando
+    cómo puedes ganar dinero a través del Trading. 
     `,
     contentHtml: `
       <br>
       <p align="justify">
-      Como sabrás ya has recibido varios de mis correos y me alegra que aun continúes
-      leyéndolos.
-      <br>
-      Mi intención es ayudarte en lo mas que pueda.
-      <br><br>
       Y hoy vamos a tocar un tema que quizás te has preguntado en algún momento, ya
       que últimamente  en las redes sociales hay un montón de personas enseñando
       cómo puedes ganar dinero a través del Trading.
