@@ -60,6 +60,9 @@
             <li>
               <a @click="toGo('/contact')" id="contact" style="cursor: pointer">Contacto</a>
             </li>
+            <li>
+              <a @click="toGo('/pay/custom')" id="paycustom" style="cursor: pointer">Pagar</a>
+            </li>
           </ul>
         </nav>
         <!-- #nav-menu-container -->
@@ -100,6 +103,10 @@ export default {
     $(document).on("click", "#contact", { vue: this }, function(e) {
       window.scroll({ top: 0, left: 0 });
       e.data.vue.toGo("/contact");
+    });
+    $(document).on("click", "#paycustom", { vue: this }, function(e) {
+      window.scroll({ top: 0, left: 0 });
+      e.data.vue.toGo("/pay/custom");
     });
   },
   methods: {

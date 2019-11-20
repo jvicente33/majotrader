@@ -79,6 +79,7 @@ router.get('/view/img/:name', async (req, res) => {
 
 //Payment
 router.post('/create/session', payment.createSession)
+router.post('/create/charge', payment.createCharge)
 
 //Testimonios
 router.post('/testimony/create', testimonyCtrl.create)
