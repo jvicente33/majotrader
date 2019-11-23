@@ -107,7 +107,7 @@ export default {
   methods: {
     async sendEmail() {
       axios
-        .post("http://localhost:8020/send/contact", {
+        .post("/send/contact", {
             nombre: this.datos.name,
             email: this.datos.email,
             asunto: this.datos.subject,

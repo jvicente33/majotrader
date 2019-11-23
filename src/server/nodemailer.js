@@ -33,7 +33,7 @@ async function sendMail(subject, text, name, email) {
 
     let info = await transport.sendMail({
       from: '"Admin 👻" <admin@tradersplanet.us>',
-      // from: 'jvectronic@gmail.com',
+      // from: 'admin@tradersplanet.us',
       to: 'info@tradersplanet.us',
       subject,
       html: template,
