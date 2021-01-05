@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@chenfengyuan/vue-carousel": "^1.0.2",
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "buefy": "^0.7.7",
     "cors": "^2.8.5",
     "dotenv": "^8.0.0",
